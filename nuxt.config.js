@@ -8,7 +8,7 @@ export default {
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: '' },
+      { hid: 'description', name: 'description', content: 'Want to see all my work, projects, and challenges? Visit joshytheprogrammer and see what I can do...' },
       { name: 'format-detection', content: 'telephone=no' },
     ],
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
@@ -24,7 +24,9 @@ export default {
   components: true,
 
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
-  buildModules: [],
+  buildModules: [
+    '@nuxtjs/style-resources',
+  ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
@@ -35,6 +37,14 @@ export default {
     // https://go.nuxtjs.dev/content
     '@nuxt/content',
   ],
+
+
+  styleResources: {
+    scss: [
+      '@/assets/scss/*.scss',
+    ],
+    hoistUseStatements: true,
+  },
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
   axios: {
