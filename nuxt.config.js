@@ -24,7 +24,7 @@ export default {
   components: true,
 
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
-  buildModules: ['nuxt-windicss'],
+  buildModules: [],
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
@@ -45,8 +45,17 @@ export default {
   // PWA module configuration: https://go.nuxtjs.dev/pwa
   pwa: {
     manifest: {
+      name: 'joshytheprogrammer',
+      short_name: 'JTP',
+      description: 'THe only sites that houses all the Websites built by Joshua',
       lang: 'en',
+      background_color: '#F5F5F5',
+      theme_color: '#F5F5F5'
     },
+    icon: {
+      fileName: 'favicon.ico',
+      sizes: [64, 120, 144, 12, 192, 384, 512]
+    }
   },
 
   // Content module configuration: https://go.nuxtjs.dev/config-content
