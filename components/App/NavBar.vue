@@ -1,7 +1,7 @@
 <template>
   <nav>
     <div class="logo" @click="$router.push('/')">joshytheprogrammer</div>
-    <div class="_nav">
+    <div class="_navigation">
       <NuxtLink class="link" to="/">About</NuxtLink>
       <NuxtLink class="link" to="/work">Work</NuxtLink>
       <NuxtLink class="link" to="/projects">Projects</NuxtLink>
@@ -27,6 +27,7 @@ export default {
 <style lang="scss" scoped>
 nav {
   padding: 1rem;
+  height: 68px;
   display: inline-flex;
   align-content: stretch;
   justify-content: space-between;
@@ -37,7 +38,7 @@ nav {
     cursor: pointer;
   }
 
-  ._nav {
+  ._navigation {
     .link {
       @include nav-link;
       margin: 0 0.4rem;
