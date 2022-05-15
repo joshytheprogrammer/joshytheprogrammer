@@ -1,16 +1,42 @@
 <template>
   <div class="app">
-    <Navigation />
+    <MNavigation v-if="mobile" />
+    <DNavigation v-else />
     <Nuxt />
   </div>
 </template>
 
 <script>
-import Navigation from "../components/App/NavBar.vue"
+import DNavigation from "../components/App/NavBar.vue" // Desktop Navbar
+import MNavigation from "../components/App/MobileNav.vue" // Mobile Navbar
+
+import { mapMutations, mapGetters } from 'vuex'
+
 export default {
+  computed: {
+    ...mapGetters({
+      mobile: 'mobile/mobile',
+    }),
+  },
   components: {
-    Navigation
-  }
+    DNavigation,
+    MNavigation
+  },
+  mounted() {
+    this.isMobile()
+
+    // Watch for window size change
+    window.addEventListener("resize", this.isMobile);
+  },
+  unmounted() {
+    window.removeEventListener("resize", this.isMobile);
+  },
+  methods: {
+    ...mapMutations({
+      isMobile: 'mobile/checkWidth',
+    }),
+  },
+  
 }
 </script>
 

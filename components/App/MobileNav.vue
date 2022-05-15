@@ -1,7 +1,8 @@
 <template>
   <nav>
-    <div class="logo">This is desktop</div>
-
+    <div class="logo">
+      This is Mobile
+    </div>
   </nav>
 </template>
 
@@ -11,6 +12,6 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped>
+<style>
 
 </style>
