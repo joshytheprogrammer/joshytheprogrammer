@@ -1,0 +1,17 @@
+@mixin header {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 29px;
+  color: $dark;
+}
+
+@mixin nav-link {
+  color: $dark;
+  text-decoration: none;
+  font-weight: 500;
+  transition: font-weight .2s ease-in-out;
+
+  &:hover {
+    font-weight: 700;
+  }
+}
