@@ -15,8 +15,8 @@
         <NuxtLink class="link" to="/challenges">Challenges</NuxtLink>
         <NuxtLink class="link" to="/blog">Blog</NuxtLink>
         <div class="social">
-          <Icon icon="akar-icons:github-fill" />
-          <Icon class="ml-1" icon="akar-icons:twitter-fill" />
+          <a href="https://github.com/joshytheprogrammer" title="Visit my GitHub profile"><Icon icon="akar-icons:github-fill" /></a>
+          <a href="https://twitter.com/joshytheprog" title="Follow me on Twitter"><Icon class="ml-1" icon="akar-icons:twitter-fill" /></a>
         </div>
       </div>
     </div>
@@ -96,8 +96,14 @@ nav {
 
       .social {
         margin: 0.8rem 0;
+
+        a {
+          color: inherit;
+          text-decoration: none;
+        }
+
         .ml-1 {
-          margin: 0 0.2rem;
+          margin: 0 0.4rem;
         }
       }
     }
