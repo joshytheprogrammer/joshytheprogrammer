@@ -9,8 +9,8 @@
       <NuxtLink class="link" to="/blog">Blog</NuxtLink>
     </div>
     <div class="social">
-      <Icon class="icon" icon="akar-icons:github-fill" /><!-- https://github.com/joshytheprogrammer -->
-      <Icon class="icon" icon="akar-icons:twitter-fill" />  
+      <a href="https://github.com/joshytheprogrammer" title="Visit my GitHub profile"><Icon class="icon" icon="akar-icons:github-fill" /></a>
+      <a href="https://twitter.com/joshytheprog" title="Follow me on Twitter"><Icon class="icon" icon="akar-icons:twitter-fill" /></a>
     </div>
   </nav>
 </template>
