@@ -48,6 +48,11 @@ nav {
   .social {
     margin: 12px 0 0 0;
 
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+    
     .icon {
       cursor: pointer;
       margin: 0 0.4rem;
