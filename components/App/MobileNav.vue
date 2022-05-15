@@ -2,7 +2,7 @@
   <nav>
     <div class="_nav-open" v-if="menu">
       <div class="_nav">
-        <div class="logo" @click="$router.push('/')">JTP</div>
+        <div class="logo" @click="$router.push('/')" title="joshytheprogrammer">JTP</div>
         <div class="action" @click="toggleMenu">
           <!-- Icon to open menu -->
           <Icon class="icon" icon="ant-design:close-circle-filled" width="24" />

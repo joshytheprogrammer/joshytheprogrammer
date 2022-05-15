@@ -1,6 +1,6 @@
 <template>
   <nav>
-    <div class="logo" @click="$router.push('/')">joshytheprogrammer</div>
+    <div class="logo" @click="$router.push('/')"  title="joshytheprogrammer">joshytheprogrammer</div>
     <div class="_navigation">
       <NuxtLink class="link" to="/">About</NuxtLink>
       <NuxtLink class="link" to="/work">Work</NuxtLink>
@@ -9,8 +9,8 @@
       <NuxtLink class="link" to="/blog">Blog</NuxtLink>
     </div>
     <div class="social">
-      <Icon class="icon" icon="akar-icons:github-fill" />
-      <Icon class="icon" icon="akar-icons:twitter-fill" />
+      <Icon class="icon" icon="akar-icons:github-fill" /><!-- https://github.com/joshytheprogrammer -->
+      <Icon class="icon" icon="akar-icons:twitter-fill" />  
     </div>
   </nav>
 </template>

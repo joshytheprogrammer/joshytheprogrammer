@@ -14,4 +14,9 @@
   &:hover {
     font-weight: 700;
   }
+
+  &.nuxt-link-exact-active {
+    font-weight: 700;
+    color: $dark;
+  }
 }
