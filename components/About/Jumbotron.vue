@@ -42,34 +42,17 @@ export default {
     padding: 0 2rem;
 
     span {
-      font-weight: 600;
-      font-size: 24px;
-      line-height: 29px;
+      @include header;
     }
 
     p {
-      font-weight: 500;
-      font-size: 16px;
-      line-height: 20px;
+      @include important-text;
     }
 
     button {
       background: $dark;
       color: $light;
-      border: none;
-      font-size: 16px;
-      font-weight: 500;
-      border-radius: 4px;
-      height: fit-content;
-      width: fit-content;
-      padding: 8px 12px;
-      margin: 1rem 0;
-      cursor: pointer;
-      transition: box-shadow .2s ease-in-out, padding .2s linear;
-
-      &:hover {
-        box-shadow: 0px 8px 8px $dark;
-      }
+      @include jumbotron-button;
     }
   }
 }
