@@ -2,7 +2,7 @@
   <div>
     <div class="jumbotron">
       <div class="_me">
-        <img src="../../static/icon.png" alt="Nsofor Joshua, black and white, joshytheprogrammer">
+        <img src="../../assets/me.png" alt="Nsofor Joshua, black and white, joshytheprogrammer">
       </div>
       <div class="_desc">
         <span>Hi, I’m Nsofor Joshua and I am a Fullstack Developer</span>
@@ -12,7 +12,6 @@
     </div>
     <img src="../../assets/waves.svg" alt="cool wave effect">
   </div>
-  
 </template>
 
 <script>
@@ -23,7 +22,7 @@ export default {
 
 <style lang="scss" scoped>
 .jumbotron {
-  width: 80%;
+  width: 90%;
   margin: 2.5rem auto;
 
   display: flex;
@@ -31,7 +30,12 @@ export default {
   align-items: center;
 
   ._me {
-    
+    max-width: 100%;
+    height: auto;
+
+    img {
+      border-radius: 100%;
+    }
   }
 
   ._desc {
