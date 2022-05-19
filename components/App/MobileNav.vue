@@ -52,7 +52,8 @@ export default {
 <style lang="scss" scoped>
 nav {
   padding: 1rem;
-  height: 68px;
+  height: fit-content;
+  background: $light;
 
   ._nav-closed {
     display: flex;
@@ -77,6 +78,7 @@ nav {
       display: flex;
       justify-content: space-between;
       align-items: baseline;
+      
 
       .logo {
         @include header;

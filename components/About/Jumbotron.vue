@@ -7,18 +7,13 @@
       <div class="_desc">
         <span>Hi, I’m Nsofor Joshua and I am a Fullstack Developer</span>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer lectus habitant cras nisi sit. Risus adipiscing nisi porta scelerisque ultricies gravida neque viverra sed.</p>
-        <button>Email Me</button>
+        <a href="mailto:jurassicjoshua@protonmail.com">Email Me</a>
       </div>
     </div>
     <img src="../../assets/waves.svg" alt="cool wave effect">
   </div>
 </template>
 
-<script>
-export default {
-
-}
-</script>
 
 <style lang="scss" scoped>
 .jumbotron {
@@ -43,15 +38,18 @@ export default {
 
     span {
       @include header;
+      margin: 1rem 0;
     }
 
     p {
       @include important-text;
+      margin: 1rem 0;
     }
 
-    button {
+    a {
       background: $dark;
       color: $light;
+      text-decoration: none;
       @include jumbotron-button;
     }
   }
