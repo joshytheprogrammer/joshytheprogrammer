@@ -3,7 +3,7 @@
     <Heading title="Work" />
     <div class="content">
       <div class="card"> 
-        <img class="_img" src="../../assets/img/fgbmfi-logo.webp" alt="project name">
+        <img class="_img" src="" alt="project name">
         <div class="_body">
           <h5 class="_title">Full Gospel Official Website</h5>
           <p class="_text">The official FGBMFI website repo. Built with the Nuxtjs Framework.</p>
