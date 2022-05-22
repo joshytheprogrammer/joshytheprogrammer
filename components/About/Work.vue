@@ -87,12 +87,20 @@ export default {
       grid-template-columns: repeat(2,1fr);
     }
 
+    @media screen and (max-width: $small) {
+      grid-template-columns: repeat(1,1fr);
+    }
+
     .card {
       padding: 2px;
       border-radius: 4px;
       margin-bottom: 12px;
-      
 
+      @media screen and (max-width: $small) {
+        width: fit-content;
+        height: fit-content;
+      }
+      
       &:hover {
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
       }
