@@ -3,7 +3,51 @@
     <Heading title="Work" />
     <div class="content">
       <div class="card"> 
-        <img class="_img" src="" alt="project name">
+        <img class="_img" src="https://seeklogo.com/images/F/FGBMFI-logo-68D990748C-seeklogo.com.png" alt="project name" loading="lazy">
+        <div class="_body">
+          <h5 class="_title">Full Gospel Official Website</h5>
+          <p class="_text">The official FGBMFI website repo. Built with the Nuxtjs Framework.</p>
+          <div class="_actions">
+            <a href="#" class="preview">Preview</a>
+            <a href="#" class="github">GitHub Repo</a>
+          </div>
+        </div>
+      </div>
+      <div class="card"> 
+        <img class="_img" src="https://seeklogo.com/images/F/FGBMFI-logo-68D990748C-seeklogo.com.png" alt="project name" loading="lazy">
+        <div class="_body">
+          <h5 class="_title">Full Gospel Official Website</h5>
+          <p class="_text">The official FGBMFI website repo. Built with the Nuxtjs Framework.</p>
+          <div class="_actions">
+            <a href="#" class="preview">Preview</a>
+            <a href="#" class="github">GitHub Repo</a>
+          </div>
+        </div>
+      </div>
+      <div class="card"> 
+        <img class="_img" src="https://seeklogo.com/images/F/FGBMFI-logo-68D990748C-seeklogo.com.png" alt="project name" loading="lazy">
+        <div class="_body">
+          <h5 class="_title">Full Gospel Official Website</h5>
+          <p class="_text">The official FGBMFI website repo. Built with the Nuxtjs Framework.</p>
+          <div class="_actions">
+            <a href="#" class="preview">Preview</a>
+            <a href="#" class="github">GitHub Repo</a>
+          </div>
+        </div>
+      </div>
+      <div class="card"> 
+        <img class="_img" src="https://seeklogo.com/images/F/FGBMFI-logo-68D990748C-seeklogo.com.png" alt="project name" loading="lazy">
+        <div class="_body">
+          <h5 class="_title">Full Gospel Official Website</h5>
+          <p class="_text">The official FGBMFI website repo. Built with the Nuxtjs Framework.</p>
+          <div class="_actions">
+            <a href="#" class="preview">Preview</a>
+            <a href="#" class="github">GitHub Repo</a>
+          </div>
+        </div>
+      </div>
+      <div class="card"> 
+        <img class="_img" src="https://seeklogo.com/images/F/FGBMFI-logo-68D990748C-seeklogo.com.png" alt="project name" loading="lazy">
         <div class="_body">
           <h5 class="_title">Full Gospel Official Website</h5>
           <p class="_text">The official FGBMFI website repo. Built with the Nuxtjs Framework.</p>
@@ -27,19 +71,27 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+
 .work {
+  width: 90%;
+  margin: 0 auto;
   padding: 1rem;
+  
   
   .content {
     display: grid;
-    grid-column-gap: 9px;
-    grid-template-columns: repeat(4,1fr);
-    padding-bottom: 0.1rem;
+    grid-gap: 1rem;
+    grid-template-columns: repeat(3,1fr);
+
+    @media screen and (max-width: $mediumDesktop) {
+      grid-template-columns: repeat(2,1fr);
+    }
 
     .card {
       padding: 2px;
       border-radius: 4px;
       margin-bottom: 12px;
+      
 
       &:hover {
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)

@@ -5,15 +5,16 @@
     </div>
     <div v-else>
       <DJumbotron />
+      <DWork />
     </div>
-    <Work />
+    
   </div>
 </template>
 
 <script>
 import DJumbotron from "./Jumbotron.vue"
 import MJumbotron  from "./MJumbotron.vue"
-import Work from "./Work.vue"
+import DWork from "./Work.vue"
 
 import { mapGetters } from 'vuex'
 export default {
@@ -25,7 +26,7 @@ export default {
   components: {
     DJumbotron,
     MJumbotron,
-    Work
+    DWork
   }
 }
 </script>

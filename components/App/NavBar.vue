@@ -36,6 +36,9 @@ nav {
   .logo {
     @include header;
     cursor: pointer;
+    @media screen and (max-width: $mediumDesktop) {
+      font-size: 20px;
+    }
   }
 
   ._navigation {
