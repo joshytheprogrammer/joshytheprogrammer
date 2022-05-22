@@ -29,6 +29,7 @@ export default {
 <style lang="scss" scoped>
 .work {
   padding: 1rem;
+  
   .content {
     display: grid;
     grid-column-gap: 9px;
