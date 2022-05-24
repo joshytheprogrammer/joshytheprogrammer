@@ -9,8 +9,8 @@
             <h5 class="_title">Full Gospel Official Website</h5>
             <p class="_text">The official FGBMFI website repo. Built with the Nuxtjs Framework.</p>
             <div class="_actions">
-              <a href="#" class="preview">Preview</a>
-              <a href="#" class="github">GitHub Repo</a>
+              <a href="#" target="_blank" class="preview">Preview</a>
+              <a href="#" target="_blank" class="github">GitHub Repo</a>
             </div>
           </div>
         </div>
