@@ -7,6 +7,7 @@
       <DJumbotron />
     </div>
     <Work />
+    <Blog />
   </div>
 </template>
 
@@ -14,6 +15,7 @@
 import DJumbotron from "./Jumbotron.vue"
 import MJumbotron  from "./MJumbotron.vue"
 import Work from "./Work.vue"
+import Blog from "./Blog.vue"
 
 import { mapGetters } from 'vuex'
 export default {
@@ -25,7 +27,8 @@ export default {
   components: {
     DJumbotron,
     MJumbotron,
-    Work
+    Work,
+    Blog
   }
 }
 </script>
