@@ -8,6 +8,8 @@
 </template>
 
 <script>
+
+
 import Heading from "../Helpers/Headers.vue"
 import Card from "../Helpers/Card.vue"
 export default {
@@ -17,31 +19,16 @@ export default {
   },
   data(){
     return {
-      data: [
-        {
-          id: 0,
-          imgLink: "https://images.unsplash.com/photo-1648737154448-ccf0cafae1c2",
-          title: "Full Gospel Official Website",
-          desc: "The official FGBMFI website repo. Built with the Nuxtjs Framework.",
-          preview: "",
-          github: {
-            exists: false,
-            link: null
-          }
-        },
-        {
-          id: 1,
-          imgLink: "https://trackit.com.ng/img/Track%20IT%20Logo%20official1.jpg",
-          title: "TRACK I.T.",
-          desc: "The official TRACKIT website and repo. ",
-          preview: "https://track-it-ng.netlify.app",
-          github: {
-            exists: true,
-            link: "https://github.com/joshytheprogrammer/trackit-website"
-          }
-        }
-      ]
+      data: []
     }
+  },
+  async fetch(){
+    let data = await this.$content('work')
+    .only(['imgLink', 'title', 'desc', 'preview', 'github'])
+    .sortBy('createdAt', 'desc')
+    .fetch()
+    
+    this.data.push(...data)
   }
 }
 </script>

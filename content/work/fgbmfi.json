@@ -1,0 +1,10 @@
+{
+  "imgLink": "https://images.unsplash.com/photo-1648737154448-ccf0cafae1c2",
+  "title": "Full Gospel Official Website",
+  "desc": "The official FGBMFI website repo. Built with the Nuxtjs Framework.",
+  "preview": "https://www.fgbmfi-ng.com",
+  "github": {
+    "exists": false,
+    "link": null
+  }
+}

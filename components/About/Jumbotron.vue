@@ -5,7 +5,7 @@
         <img src="../../assets/me.png" alt="Nsofor Joshua, black and white, joshytheprogrammer">
       </div>
       <div class="_desc">
-        <span>Hi, I’m Nsofor Joshua and I am a Fullstack Developer</span>
+        <h1>Hi, I’m Nsofor Joshua and I am a Fullstack Developer</h1>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer lectus habitant cras nisi sit. Risus adipiscing nisi porta scelerisque ultricies gravida neque viverra sed.</p>
         <a href="mailto:jurassicjoshua@protonmail.com">Email Me</a>
       </div>
@@ -36,7 +36,7 @@
   ._desc {
     padding: 0 2rem;
 
-    span {
+    h1 {
       @include header;
       margin: 1rem 0;
     }
