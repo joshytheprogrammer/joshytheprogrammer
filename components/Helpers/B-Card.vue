@@ -46,7 +46,7 @@ export default {
         font-size: 14px;
         background: $light;
         text-decoration: none;
-        border: 2px solid $dark;
+        border: 1px solid $dark;
         color: inherit;
 
         &:hover {
