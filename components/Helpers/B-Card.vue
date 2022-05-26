@@ -23,7 +23,7 @@ export default {
 
   .s {
     border: 1px solid $dark;
-    border-radius: 4px;
+    border-radius: 8px;
 
     ._img {
       width: 100%;

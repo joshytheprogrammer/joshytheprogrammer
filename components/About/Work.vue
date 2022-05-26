@@ -8,8 +8,6 @@
 </template>
 
 <script>
-
-
 import Heading from "../Helpers/Headers.vue"
 import Card from "../Helpers/Card.vue"
 export default {

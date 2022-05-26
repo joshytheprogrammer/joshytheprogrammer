@@ -27,7 +27,7 @@ export default {
   margin-bottom: 12px;
   
   .s {
-    border-radius: 4px;
+    border-radius: 8px;
     // border: .1px solid $dark;
 
     &:hover {
