@@ -13,15 +13,19 @@
 @mixin nav-link {
   color: $dark;
   text-decoration: none;
-  font-weight: 500;
+  font-weight: 400;
   transition: font-weight .2s ease-in-out;
+
+  &.nuxt-link-active {
+    font-weight: 600;
+  }
 
   &:hover {
     font-weight: 700;
   }
 
   &.nuxt-link-exact-active {
-    font-weight: 900;
+    font-weight: 700;
     color: $dark;
   }
 }
