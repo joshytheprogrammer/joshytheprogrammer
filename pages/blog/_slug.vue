@@ -1,28 +1,31 @@
 <template>
-  <article>
-    <h1>{{ article.title }}</h1>
-    <p>{{ article.description }}</p>
-    <img :src="article.img" :alt="article.alt" />
+  <section class="page">
+    <article>
+      <h1>{{ article.title }}</h1>
+      <p>{{ article.description }}</p>
+      <img :src="article.imgLink" :alt="article.alt" />
+      <nuxt-content :document="article" />
+    </article>
+    <section>
 
-    <nuxt-content :document="article" />
-  </article>
+    </section>
+  </section>
 </template>
 
 <script>
 export default {
-  data(){
-    return {
-      article: []
-    }
-  },
-  async fetch(){
-    let article = await this.$content('blog', this.$route.params.slug).fetch()
+  async asyncData({ $content, params }) {
+    const article = await $content('blog', params.slug).fetch()
 
-    this.article.push(...article)
+    return { article }
   }
 }
 </script>
 
 <style lang="scss" scoped>
-
+.page {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 1rem;
+}
 </style>

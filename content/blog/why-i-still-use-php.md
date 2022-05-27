@@ -1,13 +1,15 @@
 ---
 title: Why I still use PHP?
+description: I discuss the reasons why I use PHP in most of my projects 
 imgLink: https://images.unsplash.com/photo-1648737154448-ccf0cafae1c2
+alt: image on why i still use php
 ---
 
 PHP (Hypertext Preprocessor) is known as a general-purpose scripting language that can be used to develop dynamic and interactive websites. It was among the first server-side languages that could be embedded into HTML, making it easier to add functionality to web pages without needing to call external files for data. Its use has evolved over the years, with regular upgrades ([version 8.0](https://www.php.net/releases/8.0/en.php)  was released in November 2020) adding features and unlocking new capabilities.
 
 ```php
 <?php
-echo "I am a PHP script"
+echo "I am a PHP script";
 ?>
 <!DOCTYPE html>
 <html>

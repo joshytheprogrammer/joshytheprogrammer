@@ -30,7 +30,7 @@ export default {
   margin: 0 auto;
 
   display: grid;
-  grid-gap: 1rem;
+  gap: 1rem;
   grid-template-columns: repeat(4,1fr);
 
   @media screen and (max-width: $mediumDesktop) {
