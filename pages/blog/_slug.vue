@@ -39,6 +39,7 @@ export default {
   pre {
     width: 450px;
     padding: 12px;
+    margin: 1rem 0;
     font-size: 0.9rem;
     border-radius: 4px;
     background: $light;
@@ -46,7 +47,7 @@ export default {
     border-left: 12px solid $dark;
 
     @media screen and (max-width: $mediumDesktop) {
-      width: 90%;
+      width: 100%;
     }
   }
 
@@ -55,6 +56,7 @@ export default {
 
     li {
       font-size: 0.9rem;
+      padding: 1rem 0;
     }
   }
 
