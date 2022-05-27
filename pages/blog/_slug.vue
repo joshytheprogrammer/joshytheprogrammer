@@ -3,7 +3,6 @@
     <article class="article">
       <h1 class="head">{{ article.title }}</h1>
       <p class="desc">{{ article.description }}</p>
-      <!-- <img :src="article.imgLink" :alt="article.alt" /> -->
       <nuxt-content :document="article" />
     </article>
     <section>
