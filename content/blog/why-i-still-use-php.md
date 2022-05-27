@@ -26,8 +26,6 @@ Though these days it is not considered the sexiest of languages, here are some k
   
 - **It’s open source (and therefore free!):** This also helps developers get started with PHP - it can be installed quickly and at zero cost. There is also open access to a wide range of PHP frameworks, such as  [Laravel](https://www.jobsity.com/blog/7-reasons-php-developers-love-using-laravel)  and Symfony. This feature is also appealing to companies as it helps control the costs of web development.
 
-![Why PHP is still important for web development](https://f.hubspotusercontent40.net/hubfs/5621549/php_2-png.png)
-
 - **It’s versatile:** One of the major benefits of PHP is that it is platform independent, meaning it can be used on Mac OS, Windows, Linux and supports most web browsers. It also supports all the major web servers, making it easy to deploy on different systems and platforms at minimal additional cost.  
 
 - **It enjoys strong community support:** As a veteran scripting language that is widely used, PHP now has a large and loyal community base to support it. There are tons of tutorials, FAQs, and tips to help new PHP developers and to continue pushing the boundaries of what the language can achieve through regular updates.  
