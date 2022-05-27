@@ -13,51 +13,13 @@ export default {
   },
   data(){
     return {
-      data: [
-        {
-          id: 0,
-          imgLink: "https://images.unsplash.com/photo-1648737154448-ccf0cafae1c2",
-          title: "Why I still use PHP",
-          link: "why-I-still-use-php"
-        },
-        {
-          id: 0,
-          imgLink: "https://images.unsplash.com/photo-1648737154448-ccf0cafae1c2",
-          title: "Why I still use PHP",
-          link: "why-I-still-use-php"
-        },
-        {
-          id: 0,
-          imgLink: "https://images.unsplash.com/photo-1648737154448-ccf0cafae1c2",
-          title: "Why I still use PHP",
-          link: "why-I-still-use-php"
-        },
-        {
-          id: 0,
-          imgLink: "https://images.unsplash.com/photo-1648737154448-ccf0cafae1c2",
-          title: "Why I still use PHP",
-          link: "why-I-still-use-php"
-        },
-        {
-          id: 0,
-          imgLink: "https://images.unsplash.com/photo-1648737154448-ccf0cafae1c2",
-          title: "Why I still use PHP",
-          link: "why-I-still-use-php"
-        },
-        {
-          id: 0,
-          imgLink: "https://images.unsplash.com/photo-1648737154448-ccf0cafae1c2",
-          title: "Why I still use PHP",
-          link: "why-I-still-use-php"
-        },
-        {
-          id: 0,
-          imgLink: "https://images.unsplash.com/photo-1648737154448-ccf0cafae1c2",
-          title: "Why I still use PHP",
-          link: "why-I-still-use-php"
-        },
-      ]
+      data: []
     }
+  },
+  async fetch(){
+    let data = await this.$content('blog').fetch()
+    
+    this.data.push(...data)
   }
 }
 </script>

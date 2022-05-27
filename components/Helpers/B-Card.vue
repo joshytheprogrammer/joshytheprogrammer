@@ -4,7 +4,7 @@
       <img class="_img" :src="data.imgLink" alt="project name" loading="lazy">
       <div class="_body">
         <h5 class="_title">{{data.title}}</h5>
-        <NuxtLink :to="'/blog/'+data.link">Read More</NuxtLink>
+        <NuxtLink :to="'/blog/'+data.slug">Read More</NuxtLink>
       </div>
     </div>
   </div>
