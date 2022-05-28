@@ -13,7 +13,7 @@ My Name is **Nsofor Chigoziri Joshua**. I am a **full-stack developer**. My pref
 
 ## My Projects
 
-## Frequently Asked Question
+## Frequently Asked Questions
 
  1. **Why do you have so few repositories?**
 
