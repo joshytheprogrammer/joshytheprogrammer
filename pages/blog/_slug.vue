@@ -24,7 +24,8 @@ export default {
 <style lang="scss">
 .nuxt-content {
   p {
-    font-size: 0.9rem;
+    font-size: 1.1rem;
+    margin: 1.5rem 0;
   }
 
   a {
@@ -77,22 +78,27 @@ export default {
 }
 
 .page {
-  display: grid;
-  grid-template-columns: 2fr 1fr;
-  gap: 1rem;
-  margin: 1rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  max-width: 800px;
+  margin: 1rem auto;
 
   @media screen and (max-width: $mediumDesktop) {
-    display: block;
+    margin: 1rem;
   }
 
   .article {
     margin: 1rem 0;
+    font-size: 1.125rem;
+    line-height: 1.7777778;
 
     .head {
-      font-size: 1.8rem;
-      margin-bottom: 1rem;
-      font-weight: 900;
+      font-size: 2.1428571em;
+      line-height: 1.2;
+      font-weight: 800;
+      margin: 0 auto 0.8em;
+      max-width: 65ch;
     }
 
     .desc {

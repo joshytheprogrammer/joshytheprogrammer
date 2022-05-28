@@ -31,10 +31,10 @@ export default {
 
   display: grid;
   gap: 1rem;
-  grid-template-columns: repeat(4,1fr);
+  grid-template-columns: repeat(3,minmax(0,1fr));
 
   @media screen and (max-width: $mediumDesktop) {
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(2,1fr);
   }
 
   @media screen and (max-width: $small) {
