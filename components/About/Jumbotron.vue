@@ -48,6 +48,7 @@
 
     a {
       @include jumbotron-button;
+      font-size: 14px;
     }
   }
 }

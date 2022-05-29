@@ -24,10 +24,6 @@ export default {
   margin-bottom: 12px;
   border-radius: 8px;
 
-  // &:hover {
-  //   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  // }
-
   ._img {
     width: 100%;
     height: 16rem;

@@ -33,22 +33,20 @@ export default {
 
     ._title {
       font-weight: 600;
-      font-size: 18px;
+      font-size: 14px;
       line-height: 17px;
     }
 
     a {
       @include button;
-      font-size: 14px;
-      background: $light;
       text-decoration: none;
-      border: 1px solid $dark;
+      background: $light;
+      font-size: 12px;
       color: inherit;
 
       &:hover {
         background: $dark;
         color: $light;
-        box-shadow: none;
       }
     }
   }

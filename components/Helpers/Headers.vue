@@ -14,7 +14,6 @@ export default {
 .heading {
   width: 100%;
   padding: 1rem;
-  // border-bottom: 1px $dark solid;
   text-align: center;
 
   span {
