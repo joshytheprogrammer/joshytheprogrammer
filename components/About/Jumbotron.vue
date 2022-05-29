@@ -47,9 +47,6 @@
     }
 
     a {
-      background: $dark;
-      color: $light;
-      text-decoration: none;
       @include jumbotron-button;
     }
   }

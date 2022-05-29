@@ -38,7 +38,7 @@ export default {
     }
 
     a {
-      @include jumbotron-button;
+      @include button;
       font-size: 14px;
       background: $light;
       text-decoration: none;

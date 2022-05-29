@@ -20,16 +20,13 @@ export default {
 
 <style lang="scss" scoped>
 .card {
-  padding: 2px;
   display: block;
   margin-bottom: 12px;
-  
   border-radius: 8px;
-  // border: .1px solid $dark;
 
-  &:hover {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  }
+  // &:hover {
+  //   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  // }
 
   ._img {
     width: 100%;
@@ -50,28 +47,35 @@ export default {
 
     ._text {
       font-weight: 400;
-      font-size: 14px;
+      font-size: 12px;
       line-height: 17px;
+      padding: 2px 0;
     }
 
     ._actions {
       display: inline-flex;
       justify-content: space-between;
       align-items: center;
-      font-size: 14px;
+      font-size: 12px;
 
       .preview {
+        @include button;
         text-decoration: none;
         background: $dark;
         color: $light;
-        @include jumbotron-button;
         font-size: inherit;
+        font-weight: 400;
 
+        &:hover {
+          color: $dark;
+          background: $light;
+        }
       }
 
       .github {
         text-decoration: none;
         color: $dark;
+
         &:hover {
           text-decoration: underline;
         }

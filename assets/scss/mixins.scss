@@ -34,19 +34,26 @@
   }
 }
 
-@mixin jumbotron-button {
-  border: none;
+@mixin button {
+  border: 1px solid $dark;
   font-size: 16px;
-  font-weight: 500;
+  font-weight: 400;
   border-radius: 4px;
   height: fit-content;
   width: fit-content;
   padding: 8px 12px;
   margin: 1rem 0;
   cursor: pointer;
-  transition: box-shadow .2s ease-in-out, padding .2s linear;
+  transition: box-shadow .2s ease-in-out, padding .2s linear, color .2s ease-in-out, background .2s ease-in-out;
+  text-decoration: none
+}
+
+@mixin jumbotron-button {
+  @include button;
+  color: $light;
+  background: $dark;
 
   &:hover {
-    box-shadow: 0px 8px 8px $dark;
+    padding: 8px 16px;
   }
 }
