@@ -4,6 +4,7 @@
     <div class="_body">
       <h5 class="_title">{{data.title}}</h5>
       <NuxtLink :to="'/blog/'+data.slug">Read More</NuxtLink>
+      a
     </div>
   </div>
 </template>
