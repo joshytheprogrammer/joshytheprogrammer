@@ -4,7 +4,7 @@ My Name is **Nsofor Chigoziri Joshua**. I am a **full-stack developer**. My pref
 
 ## My Work
 
-> By this I mean, websites that I created because I was paid to do so.
+> By this I mean, Web Apps that I created because I was paid to do so.
 
 - **trackit**:  
 - **mayworks**:
@@ -12,6 +12,12 @@ My Name is **Nsofor Chigoziri Joshua**. I am a **full-stack developer**. My pref
 - **joshytheprogrammer**:
 
 ## My Projects
+
+> By this I mean, Web Apps I created to for the fun of it
+
+## Challenges
+
+> By this I mean, Web Apps I created to for the fun of it
 
 ## Frequently Asked Questions
 
