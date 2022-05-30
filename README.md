@@ -17,7 +17,7 @@ My Name is **Nsofor Chigoziri Joshua**. I am a **full-stack developer**. My pref
 
 ## Challenges
 
-> By this I mean, Web Apps I created to for the fun of it
+> By this I mean, problems I encountered when building an application and how I solved them
 
 ## Frequently Asked Questions
 
