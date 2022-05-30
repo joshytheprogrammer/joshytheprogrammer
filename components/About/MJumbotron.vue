@@ -3,7 +3,7 @@
     <img src="../../assets/me.png" alt="me">
     <div class="_desc">
       <span>Hi, I’m Nsofor Joshua and I am a Fullstack Developer</span>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer lectus habitant cras nisi sit. Risus adipiscing nisi porta scelerisque ultricies gravida neque viverra sed.</p>
+      <p>My preferred technologies are <bold>Nuxtjs</bold> and <bold>Laravel</bold> but I am also familiar with <bold>Nodejs </bold> and <bold> Python</bold>. I have worked with several clients and I would be happy to assist with your next project.</p>
       <a href="mailto:jurassicjoshua@protonmail.com">Email Me</a>
     </div>
   </div>
