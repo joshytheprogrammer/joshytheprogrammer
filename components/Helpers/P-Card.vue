@@ -54,7 +54,6 @@ export default {
 
       a {
       text-decoration: none;
-      background: $light;
       font-size: 12px;
       color: inherit;
 
