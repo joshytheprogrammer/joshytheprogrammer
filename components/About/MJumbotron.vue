@@ -42,6 +42,7 @@
     }
 
     p {
+      @include important-text;
       font-weight: 400;
       font-size: 14px;
       line-height: 21px;
