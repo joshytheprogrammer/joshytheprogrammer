@@ -10,7 +10,8 @@
     </div>
     <div class="social">
       <a href="https://github.com/joshytheprogrammer" title="Visit my GitHub profile"><Icon class="icon" icon="akar-icons:github-fill" /></a>
-      <a href="https://twitter.com/joshytheprog" title="Follow me on Twitter"><Icon class="icon" icon="akar-icons:twitter-fill" /></a>
+      <a href="https://gitlab.com/joshytheprogrammer" title="Visit my GitLab profile"><Icon class="icon" icon="cib:gitlab" /></a>
+      <a href="https://twittcer.com/joshytheprog" title="Follow me on Twitter"><Icon class="icon" icon="akar-icons:twitter-fill" /></a>
     </div>
   </nav>
 </template>

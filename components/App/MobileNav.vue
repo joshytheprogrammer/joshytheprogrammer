@@ -16,7 +16,8 @@
         <NuxtLink class="link" to="/blog">Blog</NuxtLink>
         <div class="social">
           <a href="https://github.com/joshytheprogrammer" title="Visit my GitHub profile"><Icon icon="akar-icons:github-fill" /></a>
-          <a href="https://twitter.com/joshytheprog" title="Follow me on Twitter"><Icon class="ml-1" icon="akar-icons:twitter-fill" /></a>
+          <a href="https://gitlab.com/joshytheprogrammer" title="Visit my GitLab profile"><Icon class="ml-1" icon="jam:gitlab" /></a>
+          <a href="https://twitter.com/joshytheprog" title="Follow me on Twitter"><Icon  icon="akar-icons:twitter-fill" /></a>
         </div>
       </div>
     </div>
