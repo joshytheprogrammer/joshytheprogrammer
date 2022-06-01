@@ -12,7 +12,7 @@
         <NuxtLink class="link" to="/">About</NuxtLink>
         <NuxtLink class="link" to="/work">Work</NuxtLink>
         <NuxtLink class="link" to="/projects">Projects</NuxtLink>
-        <NuxtLink class="link" to="/challenges">Challenges</NuxtLink>
+        <!-- <NuxtLink class="link" to="/challenges">Challenges</NuxtLink> -->
         <NuxtLink class="link" to="/blog">Blog</NuxtLink>
         <div class="social">
           <a href="https://github.com/joshytheprogrammer" title="Visit my GitHub profile"><Icon icon="akar-icons:github-fill" /></a>
