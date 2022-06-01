@@ -5,7 +5,7 @@
       <h5 class="_title">{{data.title}}</h5>
       <p class="_desc">{{data.desc}}</p>
       <div class="actions">
-        <a :href="data.github.link">Read More</a>
+        <a :href="data.github.link">Check this out</a>
         <span class="_status" :class="data.status">{{data.status.message}}</span>
       </div>
     </div>
