@@ -6,7 +6,8 @@
       <p class="_desc">{{data.desc}}</p>
       <div class="actions">
         <a :href="data.github.link">Check this out</a>
-        <span class="_status" :class="data.status">{{data.status.message}}</span>
+        <span class="_status" :class="data.status.code">{{data.status.message}}</span>
+        <!-- completed, ongoing, not-started -->
       </div>
     </div>
   </div>
@@ -63,11 +64,22 @@ export default {
       }
 
       ._status {
-        background: $success;
         color: $light;
         border-radius: 4px;
         font-size: 12px;
         padding: 0.1rem 0.3rem;
+
+        &.completed {
+          background: $success;
+        }
+
+        &.warning {
+          background: $warning;
+        }
+
+        &.on-going {
+          background: $danger;
+        }
       }
     }
   }
