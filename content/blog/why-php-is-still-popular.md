@@ -1,6 +1,6 @@
 ---
-title: Why I still use PHP?
-description: I discuss the reasons why I use PHP in most of my projects 
+title: Why PHP is Still Popular?
+description: I discuss the reasons why developers still use PHP.
 imgLink: https://images.unsplash.com/photo-1648737154448-ccf0cafae1c2
 alt: image on why i still use php
 ---
@@ -36,4 +36,6 @@ Though these days it is not considered the sexiest of languages, here are some k
 
 - **It is tried and tested:** One major benefit of being around for a quarter century is that PHP code has been put to the test in all kinds of real-life environments. The main bugs have been found and fixed, making the language more stable and trusted by developers. Moreover, many frameworks and tools have been built over time, helping to make PHP web development more secure, efficient and effective.  
 
-- **There’s a lot of legacy code:** OK, this isn’t really a benefit of using PHP in itself, but when so many existing websites have been written with PHP it becomes an important consideration. Put simply, it is usually easier to make updates in the same language rather than try to rewrite everything in another. This helps PHP endure even when some younger developers may have a personal preference for another language. This legacy effect also means it is usually easier to find a PHP developer for your organization, though as we have written before on this blog you want to  [make sure they have the right skills](https://www.jobsity.com/blog/php-developer-skills).
+- **There’s a lot of legacy code:** OK, this isn’t really a benefit of using PHP in itself, but when so many existing websites have been written with PHP it becomes an important consideration. Put simply, it is usually easier to make updates in the same language rather than try to rewrite everything in another. This helps PHP endure even when some younger developers may have a personal preference for another language.
+
+Anyway, these are the reasons why PHP is still so popular
