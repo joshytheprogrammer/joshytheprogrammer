@@ -1,0 +1,10 @@
+{
+  "imgLink": "https://trackit.com.ng/img/Track%20IT%20Logo%20official1.jpg",
+  "title": "TRACK I.T.",
+  "desc": "The official TRACKIT website and repo. ",
+  "preview": "https://track-it-ng.netlify.app",
+  "github": {
+    "exists": true,
+    "link": "https://github.com/joshytheprogrammer/trackit-website"
+  }
+}
