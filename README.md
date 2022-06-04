@@ -7,16 +7,15 @@ My Name is **Nsofor Chigoziri Joshua**. I am a **full-stack developer**. My pref
 > By this I mean, Web Apps that I created because I was paid to do so.
 
 - **trackit**: Track IT Limited is a Microsoft Authorized Education Partner, that is dedicated to modernizing the Nigerian secondary and tertiary educational system. Check them out later :)
-
->Official Repository: [trackit_official_repository](https://github.com/joshytheprogrammer/trackit-website)
->Official Website: [trackit_official_website](https://trackit-ng.com)
+  - Official Repository: [trackit_official_repository](https://github.com/joshytheprogrammer/trackit-website)
+  - Official Website: [trackit_official_website](https://trackit-ng.com)
 
 - **mayworks**:
 - **oc-hexagon**:
 - **joshytheprogrammer**: This is my personal portfolio. It hosts my blog, work, projects and much more. Give it a look later okay :)
 
->Official Repository: [joshytheprogrammer_official_repository](https://github.com/joshytheprogrammer/joshytheprogrammer)
->Official Website: [My_Personal_Portfolio](https://joshytheprogrammer.com)
+  - Official Repository: [joshytheprogrammer_official_repository](https://github.com/joshytheprogrammer/joshytheprogrammer)
+  - Official Website: [My_Personal_Portfolio](https://joshytheprogrammer.com)
   
 ## My Projects
 
