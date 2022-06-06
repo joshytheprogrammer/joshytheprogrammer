@@ -46,8 +46,8 @@ export default {
   pre {
     background: $light;
     color: $dark;
+    font-size: 0.99rem;
     max-width: 100%;
-    line-height: 1.6;
     page-break-inside: avoid;
     display: block;
     border: 1px solid $dark;
