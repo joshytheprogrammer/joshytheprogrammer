@@ -37,26 +37,38 @@ export default {
     }
   }
 
-  pre {
-    width: 450px;
-    padding: 12px;
-    margin: 1rem 0;
-    font-size: 0.9rem;
-    border-radius: 4px;
-    background: $light;
-    border: 2px solid $dark;
-    border-left: 12px solid $dark;
+  p code {
+    background-color: $grey;
+    border-radius: 3px;
+    padding: 4px 6px;
+  }
 
-    @media screen and (max-width: $mediumDesktop) {
-      width: 100%;
-    }
+  pre {
+    background: $light;
+    color: $dark;
+    max-width: 100%;
+    line-height: 1.6;
+    page-break-inside: avoid;
+    display: block;
+    border: 1px solid $dark;
+    border-left: 6px solid $dark;
+    border-radius: 3px;
+    padding: 0.5em;
+    -webkit-text-size-adjust: none;
+    overflow-x: auto;
+    white-space: pre;
+    word-wrap: break-word;
+  }
+
+  pre, code, samp {
+    font-family: Roboto Mono,Lucida Sans Typewriter,Lucida Console,monaco,Courrier,monospace;
   }
 
   ul {
     padding: 2rem;
 
     li {
-      font-size: 0.9rem;
+      font-size: 1rem;
       padding: 1rem 0;
     }
   }
@@ -65,7 +77,7 @@ export default {
     padding: 2rem;
 
     li {
-      font-size: 0.9rem;
+      font-size: 1rem;
     }
   }
 
