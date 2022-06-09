@@ -7,7 +7,7 @@ export default {
     title: 'joshytheprogrammer',
     meta: [
       { charset: 'utf-8' },
-      { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+      { name: 'viewport', content: 'width=device-width, initial-scale=1, user-scalable=no' },
       { hid: 'description', name: 'description', content: 'Want to see all my work, projects, and challenges? Visit joshytheprogrammer and see what I can do...' },
       { name: 'format-detection', content: 'telephone=no' },
     ],
