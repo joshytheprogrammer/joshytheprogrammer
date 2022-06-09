@@ -5,7 +5,7 @@
       <h5 class="_title">{{data.title}}</h5>
       <p class="_desc">{{data.desc}}</p>
       <div class="actions">
-        <a :href="data.github.link">Check this out</a>
+        <a rel="nofollow" :href="data.github.link">Check this out</a>
         <span class="_status" :class="data.status.code">{{data.status.message}}</span>
         <!-- completed, ongoing, not-started -->
       </div>
