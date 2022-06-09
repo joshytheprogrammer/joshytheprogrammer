@@ -5,6 +5,7 @@ export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
     title: 'joshytheprogrammer',
+    prefix:"og: https://ogp.me/ns#",
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1, user-scalable=no' },
@@ -13,11 +14,11 @@ export default {
       { property: 'og:site_name', content: "joshytheprogrammer"},
       { property: 'og:title', content: 'joshytheprogrammer\'s personal portfolio and blog '},
       { property: 'og:description', content: 'Want to see all my work, projects, and challenges? Visit my personal portfolio to see what I can do...'},
-      { property: 'og:image', content: '@/static/icon.png'},
+      { property: 'og:image', content: './static/icon.png'},
       { property: 'og:url', content: 'https://www.joshytheprogrammer.com'},
       { name: 'twitter:title', content: 'joshytheprogrammer\'s personal portfolio and blog '},
       { name: "twitter:description", content: "Want to see all my work, projects, and challenges? Visit my personal portfolio to see what I can do..."},
-      { name:"twitter:image", content:"@/static/icon.png"},
+      { name:"twitter:image", content:"./static/icon.png"},
       { property: "twitter:url", content: "https://www.joshytheprogrammer.com"},
       { name: "twitter:card", content: "summary"},
       { name:"twitter:creator", content:"@joshytheprog"}
