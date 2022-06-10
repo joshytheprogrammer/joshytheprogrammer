@@ -19,7 +19,7 @@ My Name is **Nsofor Chigoziri Joshua**. I am a **full-stack developer**. My pref
   
 ## My Projects
 
-> By this I mean, Web Apps I created to for the fun of it
+> By this I mean, Web Apps I created to for the fun of it.
 
 ## Challenges
 
@@ -30,6 +30,6 @@ My Name is **Nsofor Chigoziri Joshua**. I am a **full-stack developer**. My pref
 1. **Why do you have so few repositories?**
 
 > I actually had a GitHub account with over 40 repositories, but I
-deleted that for personal reason. I would also like to keep this
+deleted that for personal reasons. I would also like to keep this
 GitHub professional. If you would like to see my less professional
- projects, see my GitLab [here](https://gitlab.com/joshy111).
+ projects, see my GitLab [here](https://gitlab.com/joshytheprogrammer).
