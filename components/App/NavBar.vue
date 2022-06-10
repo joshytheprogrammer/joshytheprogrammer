@@ -1,6 +1,6 @@
 <template>
   <nav>
-    <div class="logo" @click="$router.push('/')"  title="joshytheprogrammer">joshytheprogrammer</div>
+    <NuxtLink to="/" class="logo" title="Go back home">joshytheprogrammer</NuxtLink>
     <div class="_navigation">
       <NuxtLink class="link" to="/">About</NuxtLink>
       <NuxtLink class="link" to="/work">Work</NuxtLink>

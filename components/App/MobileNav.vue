@@ -22,7 +22,7 @@
       </div>
     </div>
     <div class="_nav-closed" v-else>
-      <div class="logo" @click="$router.push('/')">JTP</div>
+      <NuxtLink to="/" class="logo">JTP</NuxtLink>
       <div class="action" @click="toggleMenu">
         <!-- Icon to open menu -->
         <Icon class="icon" icon="ep:menu" width="24" />
