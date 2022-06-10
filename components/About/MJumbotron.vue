@@ -37,6 +37,7 @@
 
     span {
       @include header;
+      color: $light;
       padding: 1rem 0;
       font-size: 20px
     }
