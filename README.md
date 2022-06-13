@@ -10,12 +10,14 @@ My Name is **Nsofor Chigoziri Joshua**. I am a **full-stack developer**. My pref
   - Official Repository: [trackit_official_repository](https://github.com/joshytheprogrammer/trackit-website)
   - Official Website: [trackit_official_website](https://trackit-ng.com)
 
-- **mayworks**:
+- **mayworks**: Mayworks was found in 2014 for the sole purpose of exporting minerals from Nigeria to other countries in the world. Check them out later :)
+  - Official Repository: [trackit_official_repository](https://github.com/joshytheprogrammer/mayworks)
+  - Official Website: [trackit_official_website](https://mayworksintegrated.com)
+
 - **oc-hexagon**:
 - **joshytheprogrammer**: This is my personal portfolio. It hosts my blog, work, projects and much more. Give it a look later okay :)
-
   - Official Repository: [joshytheprogrammer_official_repository](https://github.com/joshytheprogrammer/joshytheprogrammer)
-  - Official Website: [My_Personal_Portfolio](https://joshytheprogrammer.com)
+  - Official Website: [My_Personal_Portfolio](https://www.joshytheprogrammer.com)
   
 ## My Projects
 
@@ -29,7 +31,4 @@ My Name is **Nsofor Chigoziri Joshua**. I am a **full-stack developer**. My pref
 
 1. **Why do you have so few repositories?**
 
-> I actually had a GitHub account with over 40 repositories, but I
-deleted that for personal reasons. I would also like to keep this
-GitHub professional. If you would like to see my less professional
- projects, see my GitLab [here](https://gitlab.com/joshytheprogrammer).
+  I actually had a GitHub account with over 40 repositories, but I deleted that for personal reasons. I would also like to keep this GitHub professional. If you would like to see my less professional projects, see my GitLab [here](https://gitlab.com/joshytheprogrammer).
