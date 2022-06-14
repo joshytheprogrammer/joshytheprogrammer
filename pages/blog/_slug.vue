@@ -4,6 +4,7 @@
       <h1 class="head">{{ article.title }}</h1>
       <p class="desc">{{ article.description }}</p>
       <nuxt-content :document="article" />
+      <button @click="$router.go(-1)">Go Back</button>
     </article>
     <section>
       
@@ -169,6 +170,10 @@ export default {
       font-weight: 400;
       font-size: 1rem;
       margin-bottom: 2rem;
+    }
+
+    button {
+      @include jumbotron-button
     }
   }
 }
