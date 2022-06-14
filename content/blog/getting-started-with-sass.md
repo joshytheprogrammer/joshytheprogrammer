@@ -39,7 +39,7 @@ Browsers don't understand scss, so it need to be compiled down to basic css. To 
 
 1. Live Sass Compiler (details below):- This extension will allow us compile our SCSS down to regular CSS.
 
-```js
+```txt
 Name: Live Sass Compiler
 Id: ritwickdey.live-sass
 Description: Compile Sass or Scss to CSS at realtime with live browser reload.
@@ -50,7 +50,7 @@ VS_Marketplace_Link: "https://marketplace.visualstudio.com/items?itemName=ritwic
 
 We will apply the following settings to the extension (in the `settings.json` :-
 
-```json
+```txt
 "liveSassCompile.settings.formats":  [
     {
     "format": "expanded",
@@ -85,7 +85,6 @@ You can use variables to store fonts, colors, sizes, and so on
 $myFont: 'Poppins', Georgia;
 $myColor: #000;
 $mySize: 480px;
-
 ```
 
 Variables are defined primarily at the top of your scss file or in a `variable.scss` dedicated file.
@@ -97,16 +96,16 @@ Sass lets you nest css rules in a way that makes code more readable and enjoyabl
 #### SCSS
 
 ```scss
-    nav {
+nav {
+    height: 72px;
+    width: 100%;
+    background-color: transparent;
+    
+    .logo {
+        width: 72px;
         height: 72px;
-        width: 100%;
-        background-color: transparent;
-        
-        .logo {
-            width: 72px;
-            height: 72px;
-        }
     }
+}
 ```
 
 #### Basic CSS
