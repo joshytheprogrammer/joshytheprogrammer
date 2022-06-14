@@ -6,17 +6,71 @@
       <nuxt-content :document="article" />
     </article>
     <section>
-
+      
     </section>
   </section>
 </template>
 
 <script>
 export default {
-  async asyncData({ $content, params }) {
-    const article = await $content('blog', params.slug).fetch()
-
-    return { article }
+  head(){
+    return {
+      title: this.article.title + ' - joshytheprogrammer\'s blog',
+      meta: [
+        { 
+          hid: 'description', 
+          name: 'description', 
+          content: this.article.description 
+        },
+        { 
+          hid: 'og:title',
+          property: 'og:title',
+          content: this.article.title + ' - joshytheprogrammer\'s blog'
+        },
+        { 
+          hid: 'og:description',
+          property: 'og:description',
+          content: this.article.description 
+        },
+        { 
+          hid: 'og:image',
+          property: 'og:image', 
+          content: this.article.imgLink
+        },
+        { 
+          hid: 'og:url',
+          property: 'og:url', 
+          content: 'https://www.joshytheprogrammer.com/blog/'+this.article.slug
+        },
+        { 
+          hid: 'twitter:title', 
+          name: 'twitter:title', 
+          content: this.article.title + ' - joshytheprogrammer\'s blog'
+        },
+        { hid: 'twitter:description', 
+          name: "twitter:description", 
+          content: this.article.description 
+        },
+        { 
+          hid: 'twitter:image', 
+          name: "twitter:image", 
+          content: this.article.imgLink
+        },
+        { 
+          hid: 'twitter:url', 
+          property: "twitter:url", 
+          content: 'https://www.joshytheprogrammer.com/blog/'+this.article.slug
+        },
+      ]
+    }
+  },
+  data() {
+    return {
+      article: {}
+    }
+  },
+  async fetch() {
+    this.article = await this.$content('blog', this.$route.params.slug).fetch()
   }
 }
 </script>
