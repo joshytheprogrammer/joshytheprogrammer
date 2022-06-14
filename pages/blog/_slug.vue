@@ -98,14 +98,12 @@ export default {
   }
 
   pre {
-    background: $light;
-    color: $dark;
+    background: $grey;
     font-size: 0.99rem;
     max-width: 100%;
     page-break-inside: avoid;
     display: block;
-    border: 1px solid $dark;
-    border-left: 6px solid $dark;
+    border: 1px solid grey;
     border-radius: 3px;
     padding: 0.5em;
     -webkit-text-size-adjust: none;
@@ -123,7 +121,6 @@ export default {
 
     li {
       font-size: 1rem;
-      padding: 1rem 0;
     }
   }
 
