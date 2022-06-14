@@ -114,7 +114,7 @@ export default {
   }
 
   pre, code, samp {
-    font-family: Roboto Mono,Lucida Sans Typewriter,Lucida Console,monaco,Courrier,monospace;
+    font-family: 'Roboto Mono';
   }
 
   ul {
