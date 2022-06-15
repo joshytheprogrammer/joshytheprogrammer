@@ -38,13 +38,19 @@ export default {
     display: grid;
     gap: 1rem;
     grid-template-columns: repeat(3,1fr);
+  }
 
-    @media screen and (max-width: $mediumDesktop) {
+  @media screen and (max-width: $mediumDesktop) {
+    width: 100%;
+    
+    .content {
       grid-template-columns: repeat(2,1fr);
     }
+  }
 
-    @media screen and (max-width: $small) {
-      grid-template-columns: repeat(1,1fr);
+  @media screen and (max-width: $small) {
+    .content {
+      display: block;
     }
   }
 }

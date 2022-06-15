@@ -17,6 +17,7 @@ export default {
 <style lang="scss" scoped>
 .card {
   display: block;
+  margin-bottom: 12px;
   border: 1px solid $dark;
   border-radius: 8px;
 
