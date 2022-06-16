@@ -8,6 +8,15 @@
 import Card from "~/components/Helpers/B-Card.vue"
 
 export default {
+  head(){
+    meta: [
+      { 
+        hid: "twitter:card", 
+        name: "twitter:card", 
+        content: "summary_large_image"
+      },
+    ]
+  },
   components: {
     Card
   },

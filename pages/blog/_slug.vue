@@ -58,9 +58,9 @@ export default {
           content: this.article.imgLink
         },
         { 
-          hid: 'twitter:url', 
-          property: "twitter:url", 
-          content: 'https://www.joshytheprogrammer.com/blog/'+this.article.slug
+          hid: "twitter:card", 
+          name: "twitter:card", 
+          content: "summary_large_image"
         },
       ]
     }
