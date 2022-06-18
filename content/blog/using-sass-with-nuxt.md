@@ -1,5 +1,5 @@
 ---
-title: How to get integrate sass (scss) into Nuxtjs
+title: How to integrate sass (scss) into Nuxtjs
 description: For Nuxtjs developers who want to use sass in their next Nuxt project
 imgLink: https://images.unsplash.com/photo-1517134191118-9d595e4c8c2b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=480&q=80
 alt: image on Nuxtjs and Sass
