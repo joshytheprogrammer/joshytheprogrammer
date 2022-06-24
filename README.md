@@ -8,11 +8,11 @@ My Name is **Nsofor Chigoziri Joshua**. I am a **full-stack developer**. My pref
 
 - **trackit**: Track IT Limited is a Microsoft Authorized Education Partner, that is dedicated to modernizing the Nigerian secondary and tertiary educational system. Check them out later :)
   - Official Repository: [trackit_official_repository](https://github.com/joshytheprogrammer/trackit-website)
-  - Official Website: [trackit_official_website](https://trackit-ng.com)
+  - Official Website: [trackit_official_website](https://track-it-ng.netlify.app)
 
 - **mayworks**: Mayworks Integrated Limited was found in 2014 for the sole purpose of exporting minerals from Nigeria to other countries in the world. Check them out later :)
   - Official Repository: [mayworks_official_repository](https://github.com/joshytheprogrammer/mayworks)
-  - Official Website: [mayworks_official_website](https://mayworkslimited.com)
+  - Official Website: [mayworks_official_website](https://mayworks.netlify.app)
 
 - **oc-hexagon**:
 - **joshytheprogrammer**: This is my personal portfolio. It hosts my blog, work, projects and much more. Give it a look later okay :)
@@ -21,11 +21,11 @@ My Name is **Nsofor Chigoziri Joshua**. I am a **full-stack developer**. My pref
   
 ## My Projects
 
-> By this I mean, Web Apps I created to for the fun of it.
+> By this I mean, Web Apps I created for the fun of it.
 
 ## Challenges
 
-> By this I mean, problems I encountered when working on Code Wars and sites like that.
+> By this I mean, problems I encountered when working on CodeWars and sites like that.
 
 ## Frequently Asked Questions
 
