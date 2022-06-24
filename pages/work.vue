@@ -11,6 +11,9 @@ export default {
   components: {
     Card
   },
+  head: {
+    title: 'joshytheprogrammer - My Work'
+  },
   data(){
     return {
       data: []
