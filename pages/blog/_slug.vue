@@ -4,7 +4,7 @@
       <h1 class="head">{{ article.title }}</h1>
       <p class="desc">{{ article.description }}</p>
       <nuxt-content :document="article" />
-      <button @click="$router.go(-1)">Go Back</button>
+      <NuxtLink class="blog go-back-btn" to="/blog">Go Back</NuxtLink>
     </article>
     <section>
       
@@ -172,7 +172,7 @@ export default {
       margin-bottom: 2rem;
     }
 
-    button {
+    .blog.go-back-btn {
       @include jumbotron-button
     }
   }
