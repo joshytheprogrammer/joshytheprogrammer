@@ -1,6 +1,6 @@
 <template>
   <div class="card"> 
-    <img class="_img" :src="data.imgLink" alt="project name" loading="lazy">
+    <img class="_img" :src="data.imgLink" :alt="'image of '+data.title" loading="lazy">
     <div class="_body">
       <h5 class="_title">{{data.title}}</h5>
       <NuxtLink :to="'/blog/'+data.slug">Read More</NuxtLink>
