@@ -1,7 +1,7 @@
 ---
 title: How to build a simple contact form using HTML and CSS
 description: In this tutorial, I will walk you through building a form in html and styling it with css.
-imgLink: https://gitlab.com/joshytheprogrammer/jtp-css-blog-form-1/-/raw/main/images/css-blog-form-1-image.png
+imgLink: https://res.cloudinary.com/dsgvwxygr/image/upload/v1656161543/blog/css-blog-form-1-image_fqsbri.png
 alt: image of form we built with css
 ---
 
@@ -10,7 +10,7 @@ One of the things that will come up often during your programming journey is for
 Today, we will be working on a building a contact form using html and css. There will be no JavaScript involved and I will try to break the css down as much as possible. I have this code on [GitLab](https://gitlab.com/joshytheprogrammer/jtp-css-blog-form-1), feel free to fork it but be sure to give it a star while you do.  Let's get started.
 
 Below, I have an image of what we will be building.
-![Image of my html and css form](https://gitlab.com/joshytheprogrammer/jtp-css-blog-form-1/-/raw/main/images/css-blog-form-1-image.png)
+![Image of my html and css form](https://res.cloudinary.com/dsgvwxygr/image/upload/v1656161543/blog/css-blog-form-1-image_fqsbri.png)
 
 First, lets scaffold our html default structure in vscode. We do this by typing `html:5` and then pressing either `tab` or `enter`. If you are not using vscode, copy the the code below.
 
