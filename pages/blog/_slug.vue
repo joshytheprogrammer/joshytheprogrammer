@@ -99,18 +99,14 @@ export default {
   }
 
   pre {
-    background: $grey;
-    font-size: 0.99rem;
-    max-width: 100%;
-    page-break-inside: avoid;
-    display: block;
-    border: 1px solid grey;
-    border-radius: 3px;
-    padding: 0.5em;
-    -webkit-text-size-adjust: none;
-    overflow-x: auto;
-    white-space: pre;
-    word-wrap: break-word;
+    font-size: .99rem;
+    font-weight: 400;
+    color: #35495e;
+    letter-spacing: 0;
+    padding: 10px;
+    border: 1px solid #dbdfe1;
+    border-radius: 4px;
+    background-color: #fcfcfc;
   }
 
   pre, code, samp {
