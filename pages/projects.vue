@@ -5,7 +5,7 @@
         Projects
       </template>
       <template #desc>
-        By this I mean web apps I created for the community, open source projects designed to make lives better.
+        Web apps I created for the community, open source projects designed to make lives better.
       </template>
     </Headers>
     <div class="content">
