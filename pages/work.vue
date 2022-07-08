@@ -1,5 +1,13 @@
 <template>
   <div class="work">
+    <Headers>
+      <template #heading>
+        Work
+      </template>
+      <template #desc>
+        By this I mean web apps I created professionally either because I was paid or I wanted to sell.
+      </template>
+    </Headers>
     <div class="content">
       <Card v-for="item in data" :key="item.id" :data="item" />
     </div>
@@ -8,10 +16,12 @@
 
 <script>
 import Card from "~/components/Helpers/Card.vue"
+import Headers from "~/components/App/Headers.vue"
 
 export default {
   components: {
-    Card
+    Card,
+    Headers
   },
   head: {
     title: 'joshytheprogrammer - My Work'
@@ -33,7 +43,7 @@ export default {
 .work {
   .content {
     width: 90%;
-    margin: 0 auto;
+    margin: 1rem auto;
 
     display: grid;
     gap: 1rem;
