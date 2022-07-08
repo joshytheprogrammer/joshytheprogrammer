@@ -25,10 +25,10 @@
   align-items: center;
 
   ._me {
-    max-width: 100%;
-    height: auto;
+    height: 100%;
 
     img {
+      height: 100%;
       border-radius: 100%;
     }
   }
@@ -54,7 +54,18 @@
 
   @media screen and (max-width: $medium) {
     width: 100%;
-    
+    padding: 1rem;
+
+    ._me {
+      height: 16rem;
+
+      img {
+        height: 100%;
+      }
+    }
+  }
+
+  @media screen and (max-width: $s-medium) {
     flex-direction: column;
 
     ._me {
