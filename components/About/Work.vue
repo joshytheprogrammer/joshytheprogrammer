@@ -43,14 +43,14 @@ export default {
     grid-template-columns: repeat(3,1fr);
   }
 
-  @media screen and (max-width: $mediumDesktop) {
+  @media screen and (max-width: $medium) {
     width: 100%;
     .content {
       grid-template-columns: repeat(2,1fr);
     }
   }
 
-  @media screen and (max-width: $small) {
+  @media screen and (max-width: $medium) {
     .content {
       display: block;
     }

@@ -7,8 +7,15 @@ $warning: #D78521;
 $danger: #CC2936;
 
 // Sizes
-$small: 728px;
-$mediumDesktop: 900px;
+// $small: 728px;
+// $mediumDesktop: 900px;
+
+$small: 425px;
+$medium: 768px;
+$m-large: 900px;
+$large: 1200px;
+$x-large: 1440px;
+$xx-large: 2560px;
 
 html,
 body {

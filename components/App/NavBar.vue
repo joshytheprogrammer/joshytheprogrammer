@@ -38,7 +38,7 @@ nav {
     @include header;
     cursor: pointer;
     
-    @media screen and (max-width: $mediumDesktop) {
+    @media screen and (max-width: $medium) {
       font-size: 20px;
     }
   }

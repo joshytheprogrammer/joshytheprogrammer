@@ -144,7 +144,7 @@ export default {
   max-width: 800px;
   margin: 1rem auto;
 
-  @media screen and (max-width: $mediumDesktop) {
+  @media screen and (max-width: $medium) {
     margin: 1rem;
   }
 

@@ -52,7 +52,7 @@
     }
   }
 
-  @media screen and (max-width: $small) {
+  @media screen and (max-width: $medium) {
     width: 100%;
     
     flex-direction: column;
