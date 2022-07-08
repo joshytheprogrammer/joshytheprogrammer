@@ -1,11 +1,22 @@
 <template>
-  <div class="content">
-    <Card v-for="item in data" :key="item.id" :data="item" />
+  <div class="blog">
+    <Headers>
+      <template #heading>
+        Blog
+      </template>
+      <template #desc>
+        My lessons, thoughts, projects and life all summarized in written form.
+      </template>
+    </Headers>
+    <div class="content">
+      <Card v-for="item in data" :key="item.id" :data="item" />
+    </div>
   </div>
 </template>
 
 <script>
 import Card from "~/components/Helpers/B-Card.vue"
+import Headers from "~/components/App/Headers.vue"
 
 export default {
   head(){
@@ -21,7 +32,8 @@ export default {
     }
   },
   components: {
-    Card
+    Card,
+    Headers
   },
   data(){
     return {
@@ -37,22 +49,24 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.content {
-  width: 90%;
-  margin: 0 auto;
+.blog {
+  .content {
+    width: 90%;
+    margin: 1rem auto;
 
-  display: grid;
-  gap: 1rem;
-  grid-template-columns: repeat(3,minmax(0,1fr));
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(3,minmax(0,1fr));
 
-  @media screen and (max-width: $medium) {
-    width: 100%;
-    padding: 0.9rem;
-    grid-template-columns: repeat(2,1fr);
-  }
+    @media screen and (max-width: $medium) {
+      width: 100%;
+      padding: 0.9rem;
+      grid-template-columns: repeat(2,1fr);
+    }
 
-  @media screen and (max-width: $s-medium) {
-    display: block;
+    @media screen and (max-width: $s-medium) {
+      display: block;
+    }
   }
 }
 </style>
