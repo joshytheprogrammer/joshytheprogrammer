@@ -36,5 +36,9 @@
     font-size: 20px;
     line-height: 1.95;
   }
+
+  @media screen and (max-width: $medium){
+    height: 700px;
+  }
 }
 </style>
