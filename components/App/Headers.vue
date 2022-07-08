@@ -10,7 +10,7 @@
 <style lang="scss" scoped>
 .header {
   padding: 72px 1rem;
-  height: 900px;
+  height: 845px;
   background: inherit;
   background-image: url("../../assets/bubbles.svg");
   background-attachment: fixed;
