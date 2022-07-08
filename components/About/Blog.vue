@@ -48,7 +48,7 @@ export default {
     }
   }
 
-  @media screen and (max-width: $medium) {
+  @media screen and (max-width: $s-medium) {
     .content {
       display: block;
     }
