@@ -1,6 +1,8 @@
 <template>
-  <div class="content">
-    <Card v-for="item in data" :key="item.id" :data="item" />
+  <div class="work">
+    <div class="content">
+      <Card v-for="item in data" :key="item.id" :data="item" />
+    </div>
   </div>
 </template>
 
@@ -28,22 +30,24 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.content {
-  width: 90%;
-  margin: 0 auto;
+.work {
+  .content {
+    width: 90%;
+    margin: 0 auto;
 
-  display: grid;
-  gap: 1rem;
-  grid-template-columns: repeat(3,minmax(0,1fr));
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(3,minmax(0,1fr));
 
-  @media screen and (max-width: $medium) {
-    width: 100%;
-    padding: 0.9rem;
-    grid-template-columns: repeat(2,1fr);
-  }
+    @media screen and (max-width: $medium) {
+      width: 100%;
+      padding: 0.9rem;
+      grid-template-columns: repeat(2,1fr);
+    }
 
-  @media screen and (max-width: $s-medium) {
-    display: block;
+    @media screen and (max-width: $s-medium) {
+      display: block;
+    }
   }
 }
 </style>
