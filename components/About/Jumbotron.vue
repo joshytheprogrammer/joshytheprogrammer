@@ -51,5 +51,23 @@
       font-size: 14px;
     }
   }
+
+  @media screen and (max-width: $small) {
+    width: 100%;
+    
+    flex-direction: column;
+
+    ._me {
+      height: 16rem;
+
+      img {
+        height: 100%;
+      }
+    }
+
+    ._desc {
+      text-align: center;
+    }
+  }
 }
 </style>

@@ -1,11 +1,6 @@
 <template>
   <div class="about">
-    <div v-if="mobile">
-      <MJumbotron />
-    </div>
-    <div v-else>
-      <DJumbotron />
-    </div>
+    <DJumbotron />
     <Work />
     <Blog />
   </div>
