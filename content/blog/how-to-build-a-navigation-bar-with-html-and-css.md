@@ -27,9 +27,12 @@ Scaffold your html project with `html:5` in vscode. For the html, copy and paste
 ```
 
 Let me explain:-
+
 The nav is the html semantic element that signifies that this is where you want to build your navigation bar.
-The `.logo` section holds the logo of your website. It can be an image or just text. Ours will be just text.
-The `.links` section holds the navigation links we will be creating. By the way, I have a tutorial on [how to create your company contact form here.](https://joshytheprogrammer.com/blog/how-to-build-a-contact-form-with-html-and-css)
+
+The `.logo` section holds the logo of the website. It can be an image or just text. Ours will be just text.
+
+The `.links` section holds the navigation links we will be creating. By the way, I have a tutorial on [how you can create your company contact form here.](https://joshytheprogrammer.com/blog/how-to-build-a-contact-form-with-html-and-css)
 
 Note: Don't forget to link the css file.
 `<link rel="stylesheet" href="style.css">`
@@ -82,15 +85,23 @@ nav {
 Let's explain,
 
 First we import the Roboto font. You can just copy what I wrote or you can yours via google fonts [here](fonts.google.com).
-We apply the document reset. Telling the document to remove default margins padding and so on.
+
+We applied the css reset, telling the document to remove default margins, paddings and so on.
+
 Next, we tell the document to use Roboto and we make the body greyish.
 
-For our nav, we change the display to flex. This will allow it stay on a single row. Using flexbox, we then tell the document to leave a space between the two elements in the nav tag, and also to align these element at the center of one another. After this, we tell css to make this nav white, and also add a little padding.
+For our nav, we change the display to flex. This will allow it stay on a single row.
 
-For our logo, we are just increasing the font-size and reducing the font-weight. We are also make it all caps.
-Note:- I used `h2` instead of `h1` for a reason. It is because crawlers take the h1 tag very seriously. It is recommended a site has just one per page, as whatever is on it will typically be used to describe the page.
+Using flexbox, we then tell the document to leave a space between the two elements in the nav tag, and also to align these element at the center of one another.
 
-For our links, we remove text-decoration and change the color to match the logo i.e. Black. We also add padding to each link to separate them.,
-When the use hovers however, we want the link to be decorated. I decided to underline the link and make it 8px away from the text.
+After this, we tell css to make this nav white, and also add a little padding.
+
+For our logo, we are just increasing the font-size and reducing the font-weight. We are also making it all caps.
+
+**Note**:- I used `h2` instead of `h1` for a reason. It is because crawlers take the h1 tag very seriously. It is recommended that a site has just one per page, as whatever is on it will typically be used to describe the page.
+
+For our links, we remove text-decoration and change the color to match the logo i.e. Black. We also add padding to each link to separate them.
+
+When the user hovers however, we want the link to be decorated. I decided to underline the link and make it 8px away from the text.
 
 And that's how you build a Navigation bar with just html and css. Note that it isn't responsive yet. I will be working on that in a later post. Hope you enjoy :)
