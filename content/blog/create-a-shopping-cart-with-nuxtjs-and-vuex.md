@@ -6,9 +6,9 @@ alt: image-how-to-create-shopping-cart
 ---
 
 
-Let's build a shopping cart. Here is what the site will look like when we finish. <--- insert image of finished product --->
+Let's build a shopping cart. Here is what the site will look like when we finish. ![Image of finished product](https://res.cloudinary.com/dsgvwxygr/image/upload/v1658580335/blog/finished-post-cart-blog_z54ddd.png)
 You can see the finished product on GitLab [here](https://gitlab.com/joshytheprogrammer/nuxt-shopping-cart).
-I truly do hope that this project will be of use to you in some way or another. Even it only makes you love and appreciate Nuxtjs more, it would have been worth it.
+I truly do hope that this project will be of use to you in some way or another. Even if it only makes you love and appreciate Nuxtjs more, it would have been worth it.
 
 Here is what you will learn today,
 
