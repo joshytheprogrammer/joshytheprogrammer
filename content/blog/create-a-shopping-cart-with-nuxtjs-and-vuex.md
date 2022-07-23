@@ -149,7 +149,7 @@ ADD_ITEM(state, payload) {
 ## How to make these cart variables persist after reload
 
 For now, whenever we reload our web page, the entire cart disappears. That is obviously not what we want. We want it to persist even after the user closes the app and returns later on. To achieve this, we will be working with the local storage API. Essentially whenever a new item is added or removed from the cart, we update the cart variable in local storage.
-To achieve this, add the following code to the end of each mutation. Remember, whenever the cart array is updated, run this code.
+To achieve this, add the following code to the end of each mutation. Remember, whenever the cart array is updated, this code must run.
 
 ```js
 localStorage.setItem('cart', JSON.stringify(state.cart))
@@ -162,7 +162,7 @@ First, create a new mutation called `INITIATE_CART`
 ```js
 INITIATE_CART(state) {
 	if(localStorage.getItem('cart')){
-		state.cart  =  JSON.parse(localStorage.getItem('cart'))
+		state.cart = JSON.parse(localStorage.getItem('cart'))
 	}
 }
 ```
