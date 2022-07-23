@@ -21,7 +21,7 @@ I will not bother with css much today, just some basic stuff. I will assume you 
 
 ## Creating the 'add to cart' feature with Vuex
 
-In your `store` folder, create an `index.js` folder and delete the `Readme.md` file. This will initialize Vuex. Copy and paste the following code.
+In your `store` folder, create an `index.js` folder and delete the `Readme.md` file. This will initialize Vuex. Copy and paste the following code into it.
 
 ```js
 export  const  state  = () => ({
@@ -46,7 +46,7 @@ export  const  modules  = {
 ```
 
 Create a new state called cart. It should be an array like so
-`cart: []` This cart array will hold all your cart items.
+`cart: []`. This cart array will hold all your cart items.
 
 Next, you want to create a new mutation. This will be called `ADD_ITEM` and it will accept two parameters, `state` and 	`payload`.  Like so:
 
@@ -57,9 +57,12 @@ ADD_ITEM(state, payload) {
 ```
 
 The work of this function is simple, it accepts an item as `payload` and pushes it to the cart. To implement this, add the following code `state.cart.push(payload)`.
-That's all we have created the add to cart feature.
+That's all, we have created the add to cart feature.
 
-It's bad practice to call a mutation directly, its better we call it from an action. That's why we want to create the add item `action`. It should accept two parameters. The first is a the `commit` and the second is the payload or in our case the `item`. Please note that the commit should be de-structured.
+It's bad practice to call a mutation directly, its better we call it from an action. That's why we want to create the add item `action`. It should accept two parameters. The first is the `commit` and the second is the payload or in our case the `item`.
+
+> Please note that the commit should be de-structured.
+
 This action will simply commit the `ADD_ITEM` mutation.
 Like so:
 
