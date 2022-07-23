@@ -175,4 +175,4 @@ beforeMount() {
 }
 ```
 
-That's it. We have successfully created and implemented basic cart functionality in our web page. Now whenever the user the page reloads the cart will remain. If you learnt something, feel free to share it with friends. You can also follow me on twitter and ask questions there.
+That's it. We have successfully created and implemented basic cart functionality in our web page. Now whenever the user reloads the cart will remain. If you learnt something, feel free to share it with friends. You can also follow me on twitter and ask questions there. Have a great day.
