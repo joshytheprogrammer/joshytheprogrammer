@@ -121,8 +121,8 @@ As for the id of the item, we will send that to our `action` from the client. It
 
 ```js
 DELETE_ITEM(state, payload) {
-	let  item  =  state.cart.find(p  =>  p.id  ===  payload)
-	let  index  =  state.cart.indexOf(item)
+	let item  = state.cart.find(p => p.id === payload)
+	let index = state.cart.indexOf(item)
 	state.cart.splice(index, 1)
 }
 ```
@@ -131,12 +131,12 @@ The `item` is the unique item we wish to delete. The `index` is the location of 
 
 ## How to remove cart duplicates
 
-You will notice that as of now, if a user clicks the add to cart button twice, it adds that item to the cart array two times. This is unacceptable. We want the cart to contain a unique items only. To achieve this, we just need to modify our `ADD_ITEM` mutation.
-Before we push our product to the cart array, we must first search that array to make sure the item isn't already there. If it is there, we do nothing. If it isn't, we add the item to the array.  Your mutation should look like this:
+You will notice that as of now, if a user clicks the add to cart button twice, it adds that item to the cart array two times. This is unacceptable. We want the cart to contain unique items only. To achieve this, we just need to modify our `ADD_ITEM` mutation.
+Before we push our product to the cart array, we must first search that array to make sure the item isn't already there. If it is there, we do nothing. If it isn't, we add the item to the array. Your mutation should look like this:
 
 ```js
 ADD_ITEM(state, payload) {
-	let  inCart  =  state.cart.find(p  =>  p.id  ===  payload.id)
+	let  inCart = state.cart.find(p => p.id === payload.id)
 
 	if(!inCart) {
 		state.cart.push(payload)
