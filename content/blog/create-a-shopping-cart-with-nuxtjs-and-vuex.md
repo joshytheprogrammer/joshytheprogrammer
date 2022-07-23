@@ -15,7 +15,7 @@ Here is what you will learn today,
  1. How to implement "add to cart" functionality with Vuex - state, actions and mutations.
  2. How to delete an item from cart.
  3. How to remove cart duplicates.
- 4. How to make these cart variables persist after reload.
+ 4. How to make these cart array persist after reload.
 
 I will not bother with css much today, just some basic stuff. I will assume you have a product with [ id, name, and price ]. A button that says "add to cart". And a frontend view of the shopping cart. Let's get started.
 
