@@ -1,5 +1,5 @@
 ---
-title: How to create a cart using Vuex in Nuxtjs
+title: How to create a shopping cart using Vuex in Nuxtjs
 description: In this tutorial, we will create and implement cart functionality in Nuxtjs using Vuex - state, mutations, actions and getters. 
 imgLink: https://res.cloudinary.com/dsgvwxygr/image/upload/v1658579757/blog/Cart_with_Nuxtjs_g1xti6.png
 alt: image-how-to-create-shopping-cart
