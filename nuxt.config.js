@@ -78,7 +78,7 @@ export default {
       theme_color: '#F5F5F5'
     },
     icon: {
-      fileName: '',
+      fileName: 'cartoon_me.png',
       sizes: [64, 120, 144, 12, 192, 384, 512]
     }
   },
