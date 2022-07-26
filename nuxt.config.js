@@ -14,11 +14,11 @@ export default {
       { property: 'og:site_name', content: "joshytheprogrammer"},
       { hid: 'og:title', property: 'og:title', content: 'joshytheprogrammer\'s personal portfolio and blog '},
       { hid: 'og:description', property: 'og:description', content: 'Want to see all my work, projects, and challenges? Visit my personal portfolio to see what I can do...'},
-      { hid: 'og:image', property: 'og:image', content: 'https://joshytheprogrammer.com/_nuxt/img/me.228b5b3.png'},
+      { hid: 'og:image', property: 'og:image', content: 'https://res.cloudinary.com/dsgvwxygr/image/upload/v1658856996/personal/cartoon_me_tinu57.png'},
       { hid: 'og:url', property: 'og:url', content: 'https://www.joshytheprogrammer.com'},
       { hid: 'twitter:title', name: 'twitter:title', content: 'joshytheprogrammer\'s personal portfolio'},
       { hid: 'twitter:description', name: "twitter:description", content: "Want to see all my work, projects, and challenges? Visit my personal portfolio to see what I can do..."},
-      { hid: 'twitter:image', name:"twitter:image", content:"https://joshytheprogrammer.com/_nuxt/img/me.228b5b3.png"},
+      { hid: 'twitter:image', name:"twitter:image", content:"https://res.cloudinary.com/dsgvwxygr/image/upload/v1658856996/personal/cartoon_me_tinu57.png"},
       { hid: 'twitter:url', property: "twitter:url", content: "https://www.joshytheprogrammer.com"},
       { hid: "twitter:card", name: "twitter:card", content: "summary"},
       { name:"twitter:creator", content:"@joshytheprog"}
@@ -78,7 +78,7 @@ export default {
       theme_color: '#F5F5F5'
     },
     icon: {
-      fileName: 'favicon.ico',
+      fileName: '',
       sizes: [64, 120, 144, 12, 192, 384, 512]
     }
   },
