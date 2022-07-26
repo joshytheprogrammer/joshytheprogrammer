@@ -2,7 +2,7 @@
   <div>
     <div class="jumbotron">
       <div class="_me">
-        <img src="../../assets/me.png" alt="Nsofor Joshua, black and white, joshytheprogrammer">
+        <img src="../../assets/cartoon_me.png" alt="Nsofor Joshua, black and white, joshytheprogrammer">
       </div>
       <div class="_desc">
         <h1>Hi, I’m Nsofor Joshua and I am a Fullstack Developer</h1>
@@ -28,8 +28,7 @@
     height: 100%;
 
     img {
-      height: 100%;
-      border-radius: 100%;
+      max-height: 420px;
     }
   }
 
