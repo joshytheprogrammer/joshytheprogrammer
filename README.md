@@ -12,7 +12,7 @@ My Name is **Nsofor Chigoziri Joshua**. I am a **full-stack developer**. My pref
 
 - **mayworks**: Mayworks Integrated Limited was found in 2014 for the sole purpose of exporting minerals from Nigeria to other countries in the world. Check them out later :)
   - Official Repository: [mayworks_official_repository](https://github.com/joshytheprogrammer/mayworks)
-  - Official Website: [mayworks_official_website](https://mayworks.netlify.app)
+  - Official Website: [mayworks_official_website](https://mayworkslimited.com/)
 
 - **oc-hexagon**:
 - **joshytheprogrammer**: This is my personal portfolio. It hosts my blog, work, projects and much more. Give it a look later okay :)
