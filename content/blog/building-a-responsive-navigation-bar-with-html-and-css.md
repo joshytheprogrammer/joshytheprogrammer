@@ -1,7 +1,7 @@
 ---
 title: How to build a responsive navigation bar using just HTML and CSS.
 description: In this short blog post, I will walk you through building a responsive navigation bar with html and css.
-imgLink: 
+imgLink: https://res.cloudinary.com/dsgvwxygr/image/upload/v1658944160/blog/building-a-responsive-navigation-bar-with-html-and-css-thumbnail_dgebp1.png
 ---
 
 In this blog post [here](https://joshytheprogrammer.com/blog/how-to-build-a-navigation-bar-with-html-and-css), I built a navigation bar. The problem with the navigation bar is that it wasn't responsive - meaning, it doesn't look good on mobile. It is important to build mobile-first. So I will walk you through building a responsive navigation bar right now. As always, you can find the code [here](https://gitlab.com/joshytheprogrammer/jtp-blog-responsive-navbar-1).
