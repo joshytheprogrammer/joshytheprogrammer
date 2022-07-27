@@ -1,7 +1,7 @@
 ---
 title: Code report - Day 22 of "#100Daysofcode"
 description: Summary of activities on 27/7/2022. Created checkout backend and wrote new blog post.
-imgLink: 
+imgLink: https://res.cloudinary.com/dsgvwxygr/image/upload/v1658931027/blog/Code_report_-_2707_thumbnail_mllxe2.png
 ---
 
 
@@ -23,6 +23,7 @@ Today, the changes made to the site are as follows.
 2. I created a system to place order data into the order database.
 3. I created a system to extract the `products ordered` from the `order` data and place them in a separate database.
 
+![image-of-order-api](https://res.cloudinary.com/dsgvwxygr/image/upload/v1658928908/blog/created-order-system-successfully_ujqkib.png)
 That concludes my changes to TEC.
 
 ### Blog
