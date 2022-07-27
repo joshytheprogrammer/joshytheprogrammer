@@ -28,6 +28,6 @@ That concludes my changes to TEC.
 
 ### Blog
 
-I noticed that one of my previous posts which is about [building-a-navbar](https://joshytheprogrammer.com/blog/how-to-build-a-navigation-bar-with-html-and-css), did not contain a responsive navbar. To correct that I decided to write another post called how to build a responsive navbar. I hope you enjoy, I will link it [here](coming-soon). Be sure to read if you need something like that, and tell me what you think.
+I noticed that one of my previous posts which is about [building-a-navbar](https://joshytheprogrammer.com/blog/how-to-build-a-navigation-bar-with-html-and-css), did not contain a responsive navbar. To correct that I decided to write another post called how to build a responsive navbar. I hope you enjoy, I will link it [https://joshytheprogrammer.com/blog/building-a-responsive-navigation-bar-with-html-and-css](coming-soon). Be sure to read if you need something like that, and tell me what you think.
 
 That concludes my programming related activities for the day. Now your all caught up.
