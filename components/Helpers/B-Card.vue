@@ -35,6 +35,7 @@ export default {
     ._title {
       font-weight: 600;
       font-size: 14px;
+      height: 28px;
       line-height: 17px;
     }
 
