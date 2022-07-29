@@ -26,7 +26,7 @@ export default {
   padding: 2rem 1rem;
 
   #revue-embed {
-    width: 100%;
+    width: 80%;
     margin: 0 auto;
 
     .revue-form-header {
@@ -74,6 +74,8 @@ export default {
 
   @media screen and (max-width: $medium){
     #revue-embed {
+      width: 80%;
+
       .revue-form-group {
         width: 100%;
       }
