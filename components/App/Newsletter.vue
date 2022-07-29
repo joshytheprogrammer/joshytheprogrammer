@@ -26,7 +26,7 @@ export default {
   padding: 2rem 1rem;
 
   #revue-embed {
-    width: 80%;
+    width: 100%;
     margin: 0 auto;
 
     .revue-form-header {
