@@ -1,5 +1,5 @@
 <template>
-  <div class="newsletter">
+  <div class="newsletter" id="newsletter">
     <div id="revue-embed">
       <form action="https://www.getrevue.co/profile/joshytheprog/add_subscriber" method="post" id="revue-form" name="revue-form">
         <div class="revue-form-header">
