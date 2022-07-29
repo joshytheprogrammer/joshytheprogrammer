@@ -22,7 +22,7 @@ export default {
 
 <style lang="scss" scoped>
 .newsletter {
-  padding: 2rem 0;
+  padding: 2rem 1rem;
 
   #revue-embed {
     .revue-form-header {
