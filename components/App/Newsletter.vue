@@ -22,9 +22,13 @@ export default {
 
 <style lang="scss" scoped>
 .newsletter {
+  width: 100%;
   padding: 2rem 1rem;
 
   #revue-embed {
+    width: 80%;
+    margin: 0 auto;
+
     .revue-form-header {
       display: $grey;
       padding: 8px 0;
@@ -34,7 +38,7 @@ export default {
     }
 
     .revue-form-group {
-      width: 80%;
+      width: 100%;
       display: inline-flex;
       justify-content: space-evenly;
 
