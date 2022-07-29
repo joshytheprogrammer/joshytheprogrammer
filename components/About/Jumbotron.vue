@@ -7,7 +7,7 @@
       <div class="_desc">
         <h1>Hi, I’m Nsofor Joshua and I am a Fullstack Developer</h1>
         <p>My preferred technologies are <bold>Nuxtjs</bold> and <bold>Laravel</bold> but I am also familiar with <bold>Nodejs </bold> and <bold> Python</bold>. I have worked with several clients and I would be happy to assist with your next project.</p>
-        <NuxtLink to="#newsletter">Join our squad</NuxtLink>
+        <a href="#newsletter">Join our squad</a>
       </div>
     </div>
     <img src="../../assets/waves.svg" alt="cool wave effect">

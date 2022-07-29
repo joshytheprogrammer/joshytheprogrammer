@@ -4,6 +4,7 @@
       <slot name="heading" />
     </h1>
     <p> <slot name="desc" /> </p>
+    <a href="#newsletter">Join our squad</a>
   </div>  
 </template>
 
@@ -35,6 +36,12 @@
   p {
     font-size: 20px;
     line-height: 1.95;
+  }
+
+  a {
+    @include jumbotron-button;
+    font-size: inherit;
+    margin: 1rem auto;
   }
 
   @media screen and (max-width: $medium){
