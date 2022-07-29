@@ -3,7 +3,7 @@
     <div id="revue-embed">
       <form action="https://www.getrevue.co/profile/joshytheprog/add_subscriber" method="post" id="revue-form" name="revue-form">
         <div class="revue-form-header">
-          Join the JTP surf squad
+          Join the squad
         </div>
         <div class="revue-form-group">
           <input class="revue-form-field" placeholder="Your email address..." type="email" name="member[email]" id="member_email" required>
