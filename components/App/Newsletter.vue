@@ -1,7 +1,7 @@
 <template>
   <div class="newsletter">
     <div id="revue-embed">
-      <form action="https://www.getrevue.co/profile/joshytheprog/add_subscriber" method="post" id="revue-form" name="revue-form"  target="_blank">
+      <form action="https://www.getrevue.co/profile/joshytheprog/add_subscriber" method="post" id="revue-form" name="revue-form">
         <div class="revue-form-header">
           Join the JTP surf squad
         </div>
@@ -22,13 +22,14 @@ export default {
 
 <style lang="scss" scoped>
 .newsletter {
-  padding: 1rem 0;
+  padding: 2rem 0;
 
   #revue-embed {
     .revue-form-header {
       display: $grey;
       padding: 8px 0;
-      font-size: 18px;
+      font-size: 16px;
+      font-weight: 500;
       line-height: 22px;
     }
 
@@ -40,15 +41,16 @@ export default {
       input {
         font-size: 16px;
         font-weight: 500;
+        height: 48px;
         border-radius: 12px;
       }
 
       input[type="email"] {
         width: 100%;
-        height: 48px;
+        
         border: 1px solid $dark;
         outline: none;
-        padding: 0 4px;
+        padding: 0 8px;
         
         border-top-right-radius: 0;
         border-bottom-right-radius: 0;
@@ -62,6 +64,39 @@ export default {
         border: none;
         border-top-left-radius: 0;
         border-bottom-left-radius: 0;
+      }
+    }
+  }
+
+  @media screen and (max-width: $medium){
+    #revue-embed {
+      .revue-form-group {
+        width: 100%;
+      }
+    }
+  }
+
+  @media screen and (max-width: $s-medium){
+    #revue-embed {
+
+      .revue-form-header {
+        padding: auto 8px;
+      }
+
+      .revue-form-group {
+        width: 100%;
+        display: block;
+
+        input[type="email"] {
+          border-top-right-radius: 12px;
+          border-bottom-right-radius: 12px;
+        }
+        
+        input[type="submit"] {
+          margin: 0.5rem 0;
+          border-top-left-radius: 12px;
+          border-bottom-left-radius: 12px;
+        }
       }
     }
   }
