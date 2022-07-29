@@ -87,15 +87,18 @@ export default {
         width: 100%;
         display: block;
 
+        input {
+          border-radius: 4px;
+        }
+
         input[type="email"] {
-          border-top-right-radius: 12px;
-          border-bottom-right-radius: 12px;
+          border-top-right-radius: 4px;
+          border-bottom-right-radius: 4px;
         }
         
         input[type="submit"] {
           margin: 0.5rem 0;
-          border-top-left-radius: 12px;
-          border-bottom-left-radius: 12px;
+          @include button;
         }
       }
     }
