@@ -4,6 +4,7 @@
       <h1 class="head">{{ article.title }}</h1>
       <p class="desc">{{ article.description }}</p>
       <nuxt-content :document="article" />
+      <Newsletter />  
       <NuxtLink class="blog go-back-btn" to="/blog">Go Back</NuxtLink>
     </article>
     <section>
@@ -13,7 +14,11 @@
 </template>
 
 <script>
+import Newsletter from "../../components/App/Newsletter.vue"
 export default {
+  components: {
+    Newsletter
+  },
   head(){
     return {
       title: this.article.title + ' - joshytheprogrammer\'s blog',
