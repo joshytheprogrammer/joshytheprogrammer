@@ -4,7 +4,7 @@
       <h1 class="head">{{ article.title }}</h1>
       <p class="desc">{{ article.description }}</p>
       <nuxt-content :document="article" />
-      <Newsletter />  
+      <!-- <Newsletter />   -->
       <NuxtLink class="blog go-back-btn" to="/blog">Go Back</NuxtLink>
     </article>
     <section>
