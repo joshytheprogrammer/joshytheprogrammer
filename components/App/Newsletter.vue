@@ -84,6 +84,7 @@ export default {
 
   @media screen and (max-width: $s-medium){
     #revue-embed {
+      width: 100%;
 
       .revue-form-header {
         padding: auto 8px;
