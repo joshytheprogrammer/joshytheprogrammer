@@ -1,7 +1,7 @@
 ---
 title: Code report - Day 24 of 100Daysofcode challenge
 description: Summary of activities on 30/7/2022 - Successfully integrated the paystack API with my backend...
-imgLink: 
+imgLink: https://res.cloudinary.com/dsgvwxygr/image/upload/v1659193245/blog/Code_report_-_30-07_thumbnail_rqt4o9.png
 ---
 
 ## Welcome to today's code report
