@@ -5,7 +5,6 @@
       <NuxtLink class="link" to="/">About</NuxtLink>
       <NuxtLink class="link" to="/work">Work</NuxtLink>
       <NuxtLink class="link" to="/projects">Projects</NuxtLink>
-      <!-- <NuxtLink class="link" to="/challenges">Challenges</NuxtLink> -->
       <NuxtLink class="link" to="/blog">Blog</NuxtLink>
     </div>
     <div class="social">
