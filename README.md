@@ -1,4 +1,5 @@
 # About Me
+
 My Name is **Nsofor Chigoziri Joshua**. I am a **full-stack developer**. My preferred technologies are **Nuxtjs** and **Laravel** but I am also familiar with **Nodejs**. I have worked with several clients over the years and they all had different needs. Some of my clients simply wanted to build blazingly fast static websites, others preferred a more grounded approach - robust full-stack websites that can adapt to the needs of their businesses. I am also familiar with the micro-service architecture. No matter what kind of website you need, you can trust that I can build it cost efficiently. After all, I am **joshytheprogrammer**.
 
 ## My Work
@@ -31,3 +32,24 @@ My Name is **Nsofor Chigoziri Joshua**. I am a **full-stack developer**. My pref
 1. **Why do you have so few repositories?**
 
   I actually had a GitHub account with over 40 repositories, but I deleted that for personal reasons. I would also like to keep this GitHub professional. If you would like to see my less professional projects, see my GitLab [here](https://gitlab.com/joshytheprogrammer).
+    Note: we encourage you to add the below to your existing `README.md` on your GitHub project.
+
+== We're Using GitHub Under Protest ==
+
+This project is currently hosted on GitHub.  This is not ideal; GitHub is a
+proprietary, trade-secret system that is not Free and Open Souce Software
+(FOSS).  We are deeply concerned about using a proprietary system like GitHub
+to develop our FOSS project. We urge you to read about the
+[Give up GitHub](https://GiveUpGitHub.org) campaign from
+[the Software Freedom Conservancy](https://sfconservancy.org) to understand
+some of the reasons why GitHub is not a good place to host FOSS projects.
+
+If you are a contributor who personally has already quit using GitHub, please
+[check this resource](INSERT_LINK) for how to send us contributions without
+using GitHub directly.
+
+Any use of this project's code by GitHub Copilot, past or present, is done
+without our permission.  We do not consent to GitHub's use of this project's
+code in Copilot.
+
+![Logo of the GiveUpGitHub campaign](https://sfconservancy.org/img/GiveUpGitHub.png)
