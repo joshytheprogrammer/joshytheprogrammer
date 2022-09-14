@@ -5,7 +5,7 @@
       <NuxtLink class="link" to="/">About</NuxtLink>
       <NuxtLink class="link" to="/work">Work</NuxtLink>
       <NuxtLink class="link" to="/projects">Projects</NuxtLink>
-      <NuxtLink class="link" to="/blog">Blog</NuxtLink>
+      <a class="link" target="_blank" href="https://blog.joshytheprogrammer.com">Blog </a>
     </div>
     <div class="social">
       <a href="https://github.com/joshytheprogrammer" title="Visit my GitHub profile"><Icon class="icon" icon="akar-icons:github-fill" /></a>
@@ -36,7 +36,7 @@ nav {
   .logo {
     @include header;
     cursor: pointer;
-    
+
     @media screen and (max-width: $medium) {
       font-size: 20px;
     }
@@ -46,6 +46,11 @@ nav {
     .link {
       @include nav-link;
       margin: 0 0.4rem;
+
+      &[target="_blank"]::after {
+        content: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAQElEQVR42qXKwQkAIAxDUUdxtO6/RBQkQZvSi8I/pL4BoGw/XPkh4XigPmsUgh0626AjRsgxHTkUThsG2T/sIlzdTsp52kSS1wAAAABJRU5ErkJggg==);
+        margin: 0;
+      }
     }
   }
 
@@ -56,7 +61,7 @@ nav {
       color: inherit;
       text-decoration: none;
     }
-    
+
     .icon {
       cursor: pointer;
       margin: 0 0.4rem;
