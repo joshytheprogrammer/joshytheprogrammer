@@ -13,7 +13,7 @@
         <NuxtLink class="link" to="/work">Work</NuxtLink>
         <NuxtLink class="link" to="/projects">Projects</NuxtLink>
         <!-- <NuxtLink class="link" to="/challenges">Challenges</NuxtLink> -->
-        <NuxtLink class="link" to="/blog">Blog</NuxtLink>
+        <a class="link" target="_blank" href="https://blog.joshytheprogrammer.com">Blog </a>
         <div class="social">
           <a href="https://github.com/joshytheprogrammer" title="Visit my GitHub profile"><Icon icon="akar-icons:github-fill" /></a>
           <a href="https://gitlab.com/joshytheprogrammer" title="Visit my GitLab profile"><Icon class="ml-1" icon="jam:gitlab" /></a>
@@ -79,7 +79,7 @@ nav {
       display: flex;
       justify-content: space-between;
       align-items: baseline;
-      
+
 
       .logo {
         @include header;
