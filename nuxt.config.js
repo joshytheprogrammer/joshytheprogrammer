@@ -24,6 +24,7 @@ export default {
       { name:"twitter:creator", content:"@joshytheprog"}
     ],
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
+    link: [{rel: "canonical", href:"https://joshytheprogrammer.com"}],
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
