@@ -54,7 +54,8 @@ export default {
 nav {
   padding: 1rem;
   height: fit-content;
-  background: $light;
+  background: $dark;
+  color: $light;
 
   ._nav-closed {
     display: flex;

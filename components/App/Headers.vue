@@ -13,11 +13,13 @@
   padding: 72px 1rem;
   height: 400px;
   background: inherit;
-  background-image: url("../../assets/bubbles.svg");
+  // background-image: url("../../assets/bubbles.svg");
+  background-image: url("https://res.cloudinary.com/dsgvwxygr/image/upload/v1697656402/blog/shubham-dhage-VDyf4yVc6fE-unsplash_iawleb.jpg");
+  color: $light;
   background-attachment: fixed;
   background-repeat: no-repeat;
   object-fit: fill;
-  border-bottom: 1px solid $dark;
+  // border-bottom: 1px solid $dark;
   display: flex;
   justify-content: center;
   flex-direction: column;

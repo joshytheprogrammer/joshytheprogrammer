@@ -37,6 +37,7 @@
 
     h1 {
       @include header;
+      color: $dark;
       margin: 1rem 0;
     }
 

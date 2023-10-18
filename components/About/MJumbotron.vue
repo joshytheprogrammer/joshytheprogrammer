@@ -2,9 +2,9 @@
   <div class="jumbotron">
     <img src="../../assets/me.png" alt="me">
     <div class="_desc">
-      <span>Hi, I’m Nsofor Joshua and I am a Fullstack Developer</span>
-      <p>My preferred technologies are <bold>Nuxtjs</bold> and <bold>Laravel</bold> but I am also familiar with <bold>Nodejs </bold> and <bold> Python</bold>. I have worked with several clients and I would be happy to assist with your next project.</p>
-      <a href="mailto:jurassicjoshua@protonmail.com">Email Me</a>
+      <span>Welcome to the Joshytheprogrammer Programming Agency</span>
+      <p>Unlock the power of innovation with cutting-edge solutions and expert programming services. Our team of dedicated programmers is here to bring your digital dreams to life. Whether it's web development, software solutions, or custom applications, we've got you covered. Join us on this exciting journey to turn your ideas into reality. Let's create something extraordinary together.</p>
+      <a href="https://forms.gle/3oM7tpLvsn1nKpby6">Contact us</a>
     </div>
   </div>
 </template>
