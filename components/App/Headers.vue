@@ -5,13 +5,13 @@
     </h1>
     <p> <slot name="desc" /> </p>
     <a href="#newsletter">Join our squad</a>
-  </div>  
+  </div>
 </template>
 
 <style lang="scss" scoped>
 .header {
   padding: 72px 1rem;
-  height: 845px;
+  height: 400px;
   background: inherit;
   background-image: url("../../assets/bubbles.svg");
   background-attachment: fixed;
