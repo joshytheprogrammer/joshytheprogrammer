@@ -3,7 +3,7 @@
     <MNavigation v-if="mobile" />
     <DNavigation v-else />
     <Nuxt />
-    <Newsletter />
+    <!-- <Newsletter /> -->
   </div>
 </template>
 
@@ -39,7 +39,7 @@ export default {
       isMobile: 'mobile/checkWidth',
     }),
   },
-  
+
 }
 </script>
 

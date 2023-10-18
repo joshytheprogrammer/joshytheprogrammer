@@ -5,9 +5,9 @@
         <img src="../../assets/cartoon_me.png" alt="Nsofor Joshua, black and white, joshytheprogrammer">
       </div>
       <div class="_desc">
-        <h1>Hi, I’m Nsofor Joshua and I am a Fullstack Developer</h1>
-        <p>My preferred technologies are <b>Nuxtjs</b> and <b>Laravel</b> but I am also familiar with <b>Nodejs </b> and <b> Python</b>. I have worked with several clients and I would be happy to assist with your next project.</p>
-        <a href="#newsletter">Join our squad</a>
+        <h1>Welcome to the Joshytheprogrammer Programming Agency</h1>
+        <p>Unlock the power of innovation with cutting-edge solutions and expert programming services. Our team of dedicated programmers is here to bring your digital dreams to life. Whether it's web development, software solutions, or custom applications, we've got you covered. Join us on this exciting journey to turn your ideas into reality. Let's create something extraordinary together.</p>
+        <a href="https://forms.gle/3oM7tpLvsn1nKpby6">Contact us</a>
       </div>
     </div>
     <img src="../../assets/waves.svg" alt="cool wave effect">

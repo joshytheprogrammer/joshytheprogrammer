@@ -1,8 +1,8 @@
 <template>
   <div class="about">
     <DJumbotron />
-    <Work />
-    <Blog />
+    <!-- <Work /> -->
+    <!-- <Blog /> -->
   </div>
 </template>
 
