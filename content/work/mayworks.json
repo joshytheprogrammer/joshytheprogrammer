@@ -1,10 +1,10 @@
 {
-  "imgLink": "https://mayworks.netlify.app/_nuxt/img/mayworks-logo.533d939.png",
+  "imgLink": "https://res.cloudinary.com/dsgvwxygr/image/upload/v1681085602/mayworks/jumbotron_nk3w3q.jpg",
   "title": "Mayworks",
   "desc": "Mayworks was found in 2014 for the sole purpose of exporting minerals from Nigeria to other countries in the world.",
   "preview": "https://mayworkslimited.com/",
   "github": {
     "exists": true,
-    "link": "https://github.com/joshytheprogrammer/mayworks"
+    "link": "https://github.com/joshytheprogrammer/mayworks-v2"
   }
 }

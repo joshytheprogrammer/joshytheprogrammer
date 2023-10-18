@@ -1,0 +1,10 @@
+{
+  "imgLink": "https://res.cloudinary.com/dsgvwxygr/image/upload/v1697654187/rexapp/chris-liverani-HUJDz6CJEaM-unsplash_hirbow.jpg",
+  "title": "RexApp AutoMobile",
+  "desc": "RexApp is a web application designed to provide users with essential functionality for user authentication, browsing automobile spare parts catalog, handling transactions, and more.",
+  "preview": "https://app.rexapp.ng/",
+  "github": {
+    "exists": true,
+    "link": "https://github.com/joshytheprogrammer/rexapp"
+  }
+}

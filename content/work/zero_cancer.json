@@ -1,0 +1,10 @@
+{
+  "imgLink": "https://res.cloudinary.com/dsgvwxygr/image/upload/v1697654416/zerocancer/national-cancer-institute-eeEiys6TU3c-unsplash_wc25z4.jpg",
+  "title": "Zero Cancer",
+  "desc": "This is a product landing page for the Zero Cancer initiative, which aims to raise awareness about cervical cancer prevention and early detection.",
+  "preview": "https://zerocancer.africa/",
+  "github": {
+    "exists": true,
+    "link": "https://github.com/joshytheprogrammer/zerocancer"
+  }
+}
