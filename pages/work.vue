@@ -24,7 +24,7 @@ export default {
     Headers
   },
   head: {
-    title: 'joshytheprogrammer - My Work'
+    title: 'JTP - Our Work'
   },
   data(){
     return {
@@ -33,7 +33,7 @@ export default {
   },
   async fetch(){
     let data = await this.$content('work').fetch()
-    
+
     this.data.push(...data)
   }
 }

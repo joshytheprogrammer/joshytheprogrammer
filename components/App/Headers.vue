@@ -4,7 +4,7 @@
       <slot name="heading" />
     </h1>
     <p> <slot name="desc" /> </p>
-    <a href="#newsletter">Join our squad</a>
+    <!-- <a href="#newsletter">Join our squad</a> -->
   </div>
 </template>
 
@@ -26,7 +26,7 @@
   text-align: center;
 
   h1, p {
-    padding: 0.9rem 0;
+    padding: 0.4rem 0;
   }
 
   h1 {
