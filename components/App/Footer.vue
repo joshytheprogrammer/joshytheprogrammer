@@ -52,6 +52,7 @@ footer {
 
   ._links {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: flex-start;
     align-self: center;
@@ -91,6 +92,10 @@ footer {
     a {
       color: $dark;
     }
+  }
+
+  @media screen and (max-width: $medium) {
+    padding: 0.9rem;
   }
 }
 </style>

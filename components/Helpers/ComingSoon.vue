@@ -28,16 +28,34 @@ export default {};
     text-align: center;
 
     .content {
-      color: #fff;
+      color: $light;
 
       h1 {
         font-size: 36px;
+        padding-bottom: 0.8rem;
         margin: 0;
       }
 
       p {
         font-size: 18px;
         margin: 0;
+      }
+    }
+  }
+
+  @media screen and (max-width: $medium) {
+
+    .overlay {
+      width: 90%;
+
+      .content {
+        h1 {
+          font-size: 24px;
+        }
+
+        p {
+          font-size: 14px;
+        }
       }
     }
   }

@@ -1,6 +1,6 @@
 // Color Pallete
 $light: #F5F5F5;
-$grey: rgba(0,0,0,.05);
+$grey: rgba(47, 46, 46, 0.05);
 $dark: #0A0A0A;
 $success: #85CB33;
 $warning: #D78521;
@@ -17,5 +17,5 @@ $xx-large: 2560px;
 html,
 body {
   background: $light;
-  overflow-x: hidden;  
+  overflow-x: hidden;
 }
