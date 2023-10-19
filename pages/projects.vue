@@ -5,7 +5,7 @@
         Projects
       </template>
       <template #desc>
-        Web apps I created for the community, open source projects designed to make lives better.
+        Open source software designed to make lives better.
       </template>
     </Headers>
     <div class="content">
@@ -30,7 +30,7 @@ export default {
   },
   async fetch(){
     let data = await this.$content('projects').fetch()
-    
+
     this.data.push(...data)
   }
 }

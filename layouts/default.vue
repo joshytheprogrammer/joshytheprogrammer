@@ -3,6 +3,7 @@
     <MNavigation v-if="mobile" />
     <DNavigation v-else />
     <Nuxt />
+    <Footer />
     <!-- <Newsletter /> -->
   </div>
 </template>
@@ -11,6 +12,7 @@
 import DNavigation from "../components/App/NavBar.vue" // Desktop Navbar
 import MNavigation from "../components/App/MobileNav.vue" // Mobile Navbar
 import Newsletter from "../components/App/Newsletter.vue"
+import Footer from "../components/App/Footer.vue"
 
 import { mapMutations, mapGetters } from 'vuex'
 
@@ -23,7 +25,8 @@ export default {
   components: {
     DNavigation,
     MNavigation,
-    Newsletter
+    Newsletter,
+    Footer
   },
   mounted() {
     this.isMobile()

@@ -14,7 +14,8 @@
   height: 400px;
   background: inherit;
   // background-image: url("../../assets/bubbles.svg");
-  background-image: url("https://res.cloudinary.com/dsgvwxygr/image/upload/v1697656402/blog/shubham-dhage-VDyf4yVc6fE-unsplash_iawleb.jpg");
+  // background-image: url("https://res.cloudinary.com/dsgvwxygr/image/upload/v1697656402/blog/shubham-dhage-VDyf4yVc6fE-unsplash_iawleb.jpg");
+  background-image: url("https://res.cloudinary.com/dsgvwxygr/image/upload/v1697740410/joshytheprogrammer/javier-miranda-SYRNx7SLHCk-unsplash_zafpff.jpg");
   color: $light;
   background-attachment: fixed;
   background-repeat: no-repeat;

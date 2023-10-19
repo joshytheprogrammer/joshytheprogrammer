@@ -5,7 +5,7 @@
         Work
       </template>
       <template #desc>
-        Web apps I created to bring me money.
+        Projects but for profit
       </template>
     </Headers>
     <div class="content">
