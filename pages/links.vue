@@ -46,13 +46,13 @@ export default {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-top: 2rem;
+    margin: 1rem;
 
 
     .link {
       display: block;
       margin-bottom: 1rem;
-      width: 400px;
+      min-width: 400px;
       padding: 2rem 1rem;
       background: $dark;
       color: $light;
@@ -65,6 +65,11 @@ export default {
       &:hover {
         background: $light;
         color: $dark;
+      }
+
+      @media screen and (max-width: $medium) {
+        width: 100%;
+        // margin: 1rem;
       }
 
     }
