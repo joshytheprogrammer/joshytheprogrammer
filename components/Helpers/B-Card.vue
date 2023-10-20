@@ -1,9 +1,9 @@
 <template>
-  <div class="card"> 
-    <img class="_img" :src="data.imgLink" :alt="'image of '+data.title" loading="lazy">
+  <div class="card">
+    <img class="_img" :src="data.coverImage?data.coverImage:'https://res.cloudinary.com/dsgvwxygr/image/upload/v1697827568/blog/c6vxbjeshb4jdue0b1jf.webp'" :alt="'image of '+data.title" loading="lazy">
     <div class="_body">
-      <h5 class="_title">{{data.title}}</h5>
-      <a :href="'/blog/'+data.slug">Read More</a>
+      <h5 class="_title"><a :href="data.link">{{data.title}}</a></h5>
+      <p class="pubDate">Published: <span>{{ data.pubDate }}</span></p>
     </div>
   </div>
 </template>
@@ -31,24 +31,31 @@ export default {
     display: flex;
     flex-direction: column;
     padding: 0.5rem 0.5rem 0 0.5rem;
+    transition: all 0.5s ease;
 
     ._title {
       font-weight: 600;
       font-size: 14px;
-      height: 28px;
-      line-height: 17px;
+      line-height: 20px;
+
+      a {
+        text-decoration: none;
+        color: $dark;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
     }
 
-    a {
-      @include button;
-      text-decoration: none;
-      background: $light;
+    .pubDate {
       font-size: 12px;
-      color: inherit;
+      font-weight: 400;
+      margin: 0.8rem 0;
 
-      &:hover {
-        background: $dark;
-        color: $light;
+      span {
+        font-style: italic;
+        font-weight: 400;
       }
     }
   }

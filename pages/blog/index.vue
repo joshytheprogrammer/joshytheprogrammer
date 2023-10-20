@@ -1,5 +1,12 @@
 <template>
   <div class="blog">
+    <!-- <div style="padding: 1rem; border: 1px solid black;" v-for="item in articles">
+      {{ item }}
+      <p>{{ item.title }}</p>
+      <p>{{ item.link }}</p>
+      <p>{{ item.pubDate }}</p>
+      <p>{{ item.thumbnail }}</p>
+    </div> -->
     <Headers>
       <template #heading>
         Blog
@@ -9,23 +16,26 @@
       </template>
     </Headers>
     <div class="content">
-      <Card v-for="item in data" :key="item.id" :data="item" />
+      <p v-if="!articles">Loading...</p>
+      <Card v-for="item in articles" :key="item.id" :data="item" />
     </div>
   </div>
 </template>
 
 <script>
-import Card from "~/components/Helpers/B-Card.vue"
 import Headers from "~/components/App/Headers.vue"
+import Card from "~/components/Helpers/B-Card.vue"
+
+import RSSParser from 'rss-parser';
 
 export default {
   head(){
     return {
       title: 'joshytheprogrammer - My Blog',
       meta: [
-        { 
-          hid: "twitter:card", 
-          name: "twitter:card", 
+        {
+          hid: "twitter:card",
+          name: "twitter:card",
           content: "summary_large_image"
         },
       ]
@@ -37,16 +47,41 @@ export default {
   },
   data(){
     return {
-      data: []
+      articles: [],
     }
   },
-  async fetch(){
-    let data = await this.$content('blog').fetch()
-    
-    this.data.push(...data)
+  async mounted(){
+    await this.getXML()
+  },
+  methods: {
+    async getXML(){
+      const url = 'https://corsproxy.io/?' + encodeURIComponent('https://blog.joshytheprogrammer.com/rss.xml');
+
+      const parser = new RSSParser({
+        customFields: {
+          item: ['cover_image']
+        }
+      });
+      try {
+        const feed = await parser.parseURL(url);
+
+        // Access the parsed feed data
+        const articles = feed.items.map(item => ({
+          title: item.title,
+          link: item.link,
+          pubDate: item.pubDate,
+          coverImage: item.cover_image
+        }));
+
+        this.articles = articles;
+      } catch (error) {
+        console.error('Error parsing RSS feed:', error);
+      }
+    }
   }
-}
+};
 </script>
+
 
 <style lang="scss" scoped>
 .blog {

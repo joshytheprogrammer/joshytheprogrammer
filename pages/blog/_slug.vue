@@ -8,63 +8,62 @@
       <NuxtLink class="blog go-back-btn" to="/blog">Go Back</NuxtLink>
     </article>
     <section>
-      
+
     </section>
   </section>
 </template>
 
 <script>
-import Newsletter from "../../components/App/Newsletter.vue"
 export default {
   components: {
-    Newsletter
+
   },
   head(){
     return {
       title: this.article.title + ' - joshytheprogrammer\'s blog',
       meta: [
-        { 
-          hid: 'description', 
-          name: 'description', 
-          content: this.article.description 
+        {
+          hid: 'description',
+          name: 'description',
+          content: this.article.description
         },
-        { 
+        {
           hid: 'og:title',
           property: 'og:title',
           content: this.article.title + ' - joshytheprogrammer\'s blog'
         },
-        { 
+        {
           hid: 'og:description',
           property: 'og:description',
-          content: this.article.description 
+          content: this.article.description
         },
-        { 
+        {
           hid: 'og:image',
-          property: 'og:image', 
+          property: 'og:image',
           content: this.article.imgLink
         },
-        { 
+        {
           hid: 'og:url',
-          property: 'og:url', 
+          property: 'og:url',
           content: 'https://www.joshytheprogrammer.com/blog/'+this.article.slug
         },
-        { 
-          hid: 'twitter:title', 
-          name: 'twitter:title', 
+        {
+          hid: 'twitter:title',
+          name: 'twitter:title',
           content: this.article.title + ' - joshytheprogrammer\'s blog'
         },
-        { hid: 'twitter:description', 
-          name: "twitter:description", 
-          content: this.article.description 
+        { hid: 'twitter:description',
+          name: "twitter:description",
+          content: this.article.description
         },
-        { 
-          hid: 'twitter:image', 
-          name: "twitter:image", 
+        {
+          hid: 'twitter:image',
+          name: "twitter:image",
           content: this.article.imgLink
         },
-        { 
-          hid: "twitter:card", 
-          name: "twitter:card", 
+        {
+          hid: "twitter:card",
+          name: "twitter:card",
           content: "summary_large_image"
         },
       ]

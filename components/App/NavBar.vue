@@ -5,7 +5,8 @@
       <NuxtLink class="link" to="/">About</NuxtLink>
       <NuxtLink class="link" to="/work">Work</NuxtLink>
       <NuxtLink class="link" to="/projects">Projects</NuxtLink>
-      <a class="link" target="_blank" href="https://blog.joshytheprogrammer.com">Blog 📝</a>
+      <NuxtLink class="link" to="/blog">Blog</NuxtLink>
+      <!-- <a class="link" target="_blank" href="https://blog.joshytheprogrammer.com">Blog 📝</a> -->
     </div>
     <div class="social">
       <a href="https://github.com/joshytheprogrammer" title="Visit my GitHub profile"><Icon class="icon" icon="akar-icons:github-fill" /></a>
