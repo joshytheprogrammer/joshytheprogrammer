@@ -1,12 +1,5 @@
 <template>
   <div class="blog">
-    <!-- <div style="padding: 1rem; border: 1px solid black;" v-for="item in articles">
-      {{ item }}
-      <p>{{ item.title }}</p>
-      <p>{{ item.link }}</p>
-      <p>{{ item.pubDate }}</p>
-      <p>{{ item.thumbnail }}</p>
-    </div> -->
     <Headers>
       <template #heading>
         Blog

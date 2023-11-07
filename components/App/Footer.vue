@@ -29,7 +29,15 @@
           <a href="https://instagram.com/joshytheprogrammer">Instagram Support</a>
           <a href="https://t.me/joshytheprogrammer">Telegram Support</a>
         </div>
-
+        <div class="social">
+          <a href="https://github.com/joshytheprogrammer" title="Visit my GitHub profile"><Icon class="icon" icon="akar-icons:github-fill" /></a>
+          <a href="https://gitlab.com/joshytheprogrammer" title="Visit my GitLab profile"><Icon class="icon" icon="cib:gitlab" /></a>
+          <a href="https://twitter.com/jtpNigeria" title="Follow me on Twitter"><Icon class="icon" icon="akar-icons:twitter-fill" /></a>
+          <a href="https://instagram.com/joshytheprogrammer" title="Follow us on Instagram"><Icon class="icon" icon="ph:instagram-logo-bold" /></a>
+          <a href="https://youtube.com/@joshytheprogrammer" title="Subscribe to our Youtube Channel"><Icon class="icon" icon="uil:youtube" /></a>
+          <a href="https://t.me/joshytheprogrammer" title="Support from telegram."><Icon class="icon" icon="mdi:telegram" /></a>
+          <a href="https://hashnode.com/@joshytheprogrammer" title="Support on hashnode"><Icon class="icon" icon="simple-icons:hashnode" /></a>
+        </div>
       </div>
     </div>
     <div class="copyright">
@@ -39,9 +47,13 @@
 </template>
 
 <script>
-  export default {
+import { Icon } from '@iconify/vue2';
+export default {
+  components: {
+    Icon,
+  },
 
-  }
+}
 </script>
 
 <style lang="scss" scoped>
@@ -80,6 +92,20 @@ footer {
 
           margin: 1.8rem 0;
         }
+      }
+
+      .social {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        margin: 0.8rem 0;
+
+        a {
+          color: inherit;
+          text-decoration: none;
+        }
+
+
       }
     }
 

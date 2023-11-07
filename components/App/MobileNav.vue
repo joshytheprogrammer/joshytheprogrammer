@@ -13,11 +13,15 @@
         <NuxtLink class="link" to="/work">Work</NuxtLink>
         <NuxtLink class="link" to="/projects">Projects</NuxtLink>
         <!-- <NuxtLink class="link" to="/challenges">Challenges</NuxtLink> -->
-        <a class="link" target="_blank" href="https://blog.joshytheprogrammer.com">Blog </a>
+        <NuxtLink class="link" to="/blog">Blog</NuxtLink>
         <div class="social">
-          <a href="https://github.com/joshytheprogrammer" title="Visit my GitHub profile"><Icon icon="akar-icons:github-fill" /></a>
-          <a href="https://gitlab.com/joshytheprogrammer" title="Visit my GitLab profile"><Icon class="ml-1" icon="jam:gitlab" /></a>
-          <a href="https://twitter.com/joshytheprog" title="Follow me on Twitter"><Icon  icon="akar-icons:twitter-fill" /></a>
+          <a href="https://github.com/joshytheprogrammer" title="Visit my GitHub profile"><Icon class="icon" icon="akar-icons:github-fill" /></a>
+          <a href="https://gitlab.com/joshytheprogrammer" title="Visit my GitLab profile"><Icon class="icon" icon="cib:gitlab" /></a>
+          <a href="https://twitter.com/jtpNigeria" title="Follow me on Twitter"><Icon class="icon" icon="akar-icons:twitter-fill" /></a>
+          <a href="https://instagram.com/joshytheprogrammer" title="Follow us on Instagram"><Icon class="icon" icon="ph:instagram-logo-bold" /></a>
+          <a href="https://youtube.com/@joshytheprogrammer" title="Subscribe to our Youtube Channel"><Icon class="icon" icon="uil:youtube" /></a>
+          <a href="https://t.me/joshytheprogrammer" title="Support from telegram."><Icon class="icon" icon="mdi:telegram" /></a>
+          <a href="https://hashnode.com/@joshytheprogrammer" title="Support on hashnode"><Icon class="icon" icon="simple-icons:hashnode" /></a>
         </div>
       </div>
     </div>

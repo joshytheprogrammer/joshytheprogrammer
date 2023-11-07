@@ -14,8 +14,6 @@
       <a href="https://twitter.com/jtpNigeria" title="Follow me on Twitter"><Icon class="icon" icon="akar-icons:twitter-fill" /></a>
       <a href="https://instagram.com/joshytheprogrammer" title="Follow us on Instagram"><Icon class="icon" icon="ph:instagram-logo-bold" /></a>
       <a href="https://youtube.com/@joshytheprogrammer" title="Subscribe to our Youtube Channel"><Icon class="icon" icon="uil:youtube" /></a>
-      <a href="https://t.me/joshytheprogrammer" title="Support from telegram."><Icon class="icon" icon="mdi:telegram" /></a>
-      <a href="https://hashnode.com/@joshytheprogrammer" title="Support on hashnode"><Icon class="icon" icon="simple-icons:hashnode" /></a>
     </div>
   </nav>
 </template>
