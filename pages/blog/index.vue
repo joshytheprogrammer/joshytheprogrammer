@@ -8,8 +8,10 @@
         My lessons, thoughts, projects and life all summarized in written form.
       </template>
     </Headers>
+    <div class="loading">
+      <Loader v-show="!articles.length" />
+    </div>
     <div class="content">
-      <p v-if="!articles">Loading...</p>
       <Card v-for="item in articles" :key="item.id" :data="item" />
     </div>
   </div>
@@ -18,6 +20,7 @@
 <script>
 import Headers from "~/components/App/Headers.vue"
 import Card from "~/components/Helpers/B-Card.vue"
+import Loader from "~/components/Helpers/Loader.vue";
 
 import RSSParser from 'rss-parser';
 
@@ -36,7 +39,8 @@ export default {
   },
   components: {
     Card,
-    Headers
+    Headers,
+    Loader
   },
   data(){
     return {
@@ -77,6 +81,12 @@ export default {
 
 <style lang="scss" scoped>
 .blog {
+  // margin: auto;
+
+  .loading {
+    width: 100%;
+    margin: 1rem auto;
+  }
   .content {
     width: 90%;
     margin: 1rem auto;

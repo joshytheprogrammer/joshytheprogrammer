@@ -8,6 +8,9 @@
         Stay up to date with our latest YouTube videos without leaving our domain.
       </template>
     </Headers>
+    <div class="loading">
+      <Loader v-show="!videos.length" />
+    </div>
     <div class="list">
       <Card v-for="video in videos" :key="video.id.videoId" :data="video" />
     </div>
@@ -17,6 +20,7 @@
 <script>
 import Headers from "~/components/App/Headers.vue"
 import Card from "~/components/Helpers/V-Card.vue"
+import Loader from "~/components/Helpers/Loader.vue";
 export default {
   head(){
     return {
@@ -32,7 +36,8 @@ export default {
   },
   components: {
     Headers,
-    Card
+    Card,
+    Loader
   },
   data(){
     return {
@@ -58,6 +63,10 @@ export default {
 
 <style lang="scss" scoped>
 .videos {
+  .loading {
+    width: 100%;
+    margin: 1rem auto;
+  }
   .list {
     width: 90%;
     margin: 1rem auto;
