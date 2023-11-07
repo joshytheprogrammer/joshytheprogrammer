@@ -48,7 +48,7 @@ export default {
     const API_KEY = process.env.YOUTUBE_API_KEY;
     const CHANNEL_ID = 'UCS-TwxE3ym8cWyX7bH4O09Q';
 
-    const url = `https://www.googleapis.com/youtube/v3/search?part=snippet&channelId=${CHANNEL_ID}&maxResults=10&key=${API_KEY}`;
+    const url = `https://www.googleapis.com/youtube/v3/search?part=snippet&channelId=${CHANNEL_ID}&maxResults=10&key=${API_KEY}&order=date`;
 
     await this.$axios.get(url)
     .then(response => {
