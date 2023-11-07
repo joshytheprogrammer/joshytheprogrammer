@@ -43,34 +43,33 @@ export default {
       articles: [],
     }
   },
-  async mounted(){
-    await this.getXML()
+  async fetch(){
+    const url = 'https://corsproxy.io/?' + encodeURIComponent('https://blog.joshytheprogrammer.com/rss.xml');
+
+    const parser = new RSSParser({
+      customFields: {
+        item: ['cover_image']
+      }
+    });
+
+    try {
+      const feed = await parser.parseURL(url);
+
+      // Access the parsed feed data
+      const articles = feed.items.map(item => ({
+        title: item.title,
+        link: item.link,
+        pubDate: item.pubDate,
+        coverImage: item.cover_image
+      }));
+
+      this.articles = articles;
+    } catch (error) {
+      console.error('Error parsing RSS feed:', error);
+    }
   },
   methods: {
-    async getXML(){
-      const url = 'https://corsproxy.io/?' + encodeURIComponent('https://blog.joshytheprogrammer.com/rss.xml');
 
-      const parser = new RSSParser({
-        customFields: {
-          item: ['cover_image']
-        }
-      });
-      try {
-        const feed = await parser.parseURL(url);
-
-        // Access the parsed feed data
-        const articles = feed.items.map(item => ({
-          title: item.title,
-          link: item.link,
-          pubDate: item.pubDate,
-          coverImage: item.cover_image
-        }));
-
-        this.articles = articles;
-      } catch (error) {
-        console.error('Error parsing RSS feed:', error);
-      }
-    }
   }
 };
 </script>
