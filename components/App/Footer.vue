@@ -104,8 +104,6 @@ footer {
           color: inherit;
           text-decoration: none;
         }
-
-
       }
     }
 
