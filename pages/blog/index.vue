@@ -47,6 +47,9 @@ export default {
       articles: [],
     }
   },
+  mounted(){
+    this.$fetch()
+  },
   async fetch(){
     const url = 'https://corsproxy.io/?' + encodeURIComponent('https://blog.joshytheprogrammer.com/rss.xml');
 
