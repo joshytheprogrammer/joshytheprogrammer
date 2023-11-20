@@ -8,7 +8,7 @@
         <div class="how_to_link">
           <a href="#installation">How to install extensions in Chrome and Firefox</a>
         </div>
-        <div class="downloads">
+        <div class="downloads" v-if="extension.downloads">
           <a v-show="extension.downloads.firefox.link" :href="extension.downloads.firefox.link" :download="extension.slug+'.xpi'">Download for Firefox</a>
 
           <a v-show="extension.downloads.chrome.link" :href="extension.downloads.chrome.link" :download="extension.slug">Download for Chrome</a>
@@ -19,7 +19,7 @@
       <div class="header">
         <h2>Screenshots & Promos</h2>
       </div>
-      <div class="content">
+      <div class="content" v-if="extension.promos">
         <p v-show="!extension.promos.images.length && !extension.promos.images.length">No promotional material available...</p>
       </div>
     </div>
