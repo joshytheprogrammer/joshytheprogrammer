@@ -26,7 +26,8 @@
 </template>
 
 <script>
-import Headers from "~/components/App/Headers.vue"
+import Headers from "~/components/App/Headers.vue";
+
 export default {
   components: {
     Headers,
@@ -49,58 +50,12 @@ export default {
   margin: 1rem auto;
   display: grid;
   gap: 1rem;
-  grid-template-columns: repeat(2,1fr);
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
 
   @media screen and (max-width: $medium) {
     width: 100%;
     margin: 1rem;
     display: block;
   }
-}
-h1 {
-  font-size: 2em;
-  margin-bottom: 10px;
-}
-
-.page-description {
-  color: #555;
-}
-
-.extension-card {
-  max-width: 100%;
-  background-color: #fff;
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  margin: 20px 0;
-  overflow: hidden;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-.extension-link {
-  display: flex;
-  text-decoration: none;
-  color: inherit;
-}
-
-.extension-thumbnail {
-  flex: 1;
-  padding: 20px;
-  background-color: #f9f9f9;
-
-  img {
-    max-width: 200px;
-  }
-}
-
-.extension-info {
-  flex: 2;
-  padding: 20px;
-  text-align: left;
-}
-
-h2 {
-  font-size: 1.5em;
-  margin-bottom: 10px;
-  color: #333;
 }
 </style>
