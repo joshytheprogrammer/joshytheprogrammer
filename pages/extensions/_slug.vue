@@ -3,12 +3,15 @@
     <div class="container-fluid det">
       <img :src="extension.thumbnail" :alt="'JTP Extensions - '+extension.name">
       <div class="info">
-        <h1>{{ extension.name }} <sup> {{ extension.version }}</sup></h1>
+        <h1>{{ extension.name }} <sup> v{{ extension.version }}</sup></h1>
         <p>{{ extension.description }}</p>
         <div class="downloads">
-          <a v-if="extension.downloads.firefox.link" :href="extension.downloads.firefox.link" :download="extension.slug">Download for Firefox</a>
+          <a v-show="extension.downloads.firefox.link" :href="extension.downloads.firefox.link" :download="extension.slug+'.xpi'">Download for Firefox</a>
 
-          <a v-if="extension.downloads.chrome.link" :href="extension.downloads.chrome.link" :download="extension.slug">Download for Chrome</a>
+          <a v-show="extension.downloads.chrome.link" :href="extension.downloads.chrome.link" :download="extension.slug">Download for Chrome</a>
+        </div>
+        <div class="how_to_link">
+          <a href="#installation">How to install extensions in Chrome and Firefox</a>
         </div>
       </div>
     </div>
@@ -17,7 +20,7 @@
         <h2>Screenshots & Promos</h2>
       </div>
       <div class="content">
-        <p v-if="!extension.promos.images.length && !extension.promos.images.length">No promotional material available...</p>
+        <p v-show="!extension.promos.images.length && !extension.promos.images.length">No promotional material available...</p>
       </div>
     </div>
     <div class="container-fluid about">
@@ -26,15 +29,82 @@
       </div>
       <div v-html="extension.about" class="styles"></div>
     </div>
+    <div class="container-fluid chrome" id="installation">
+      <div class="header">
+        <h2>How to Install</h2>
+      </div>
+      <div v-html="how_to_install" class="styles"></div>
+    </div>
   </div>
 </template>
 
 <script>
   export default {
-
     data() {
       return {
-        extension: {}
+        extension: {},
+        how_to_install: `
+          <p>Installing extensions from a .crx file on Chromium-based browsers like Brave, Chrome, and Edge, and from a .xpi file on Firefox is straightforward. Here's a step-by-step guide:</p>
+
+          <ol>
+            <li><strong>Download the Extension:</strong>
+              <ul>
+                <li>For <strong>Chromium-based Browsers (Brave, Chrome, Edge)</strong>:</li>
+                <ul>
+                  <li>Obtain the extension file you want to install in .crx format.</li>
+                </ul>
+                <li>For <strong>Firefox</strong>:</li>
+                <ul>
+                  <li>Obtain the extension file you want to install in .xpi format.</li>
+                </ul>
+              </ul>
+            </li>
+
+            <li><strong>Open the Extension Management Page:</strong>
+              <ul>
+                <li>For <strong>Chromium-based Browsers (Chrome and Edge)</strong>, you can open the extensions page by typing the following in the address bar and pressing Enter:
+                  <code>chrome://extensions/</code></li>
+                <li>For <strong>Brave</strong>, use:
+                  <code>brave://extensions/</code></li>
+                <li>For <strong>Firefox</strong>, open the Add-ons page by typing the following in the address bar:
+                  <code>about:addons</code></li>
+              </ul>
+            </li>
+
+            <li><strong>Enable Developer Mode (Chromium only):</strong>
+              <p>In the top right corner of the Extensions (Chromium-based Browsers), there's a toggle for "Developer mode." Turn it on.</p></li>
+
+            <li><strong>Load the Extension:</strong>
+              <ul>
+                <li>For <strong>Chromium-based Browsers</strong>:</li>
+                <p>Once Developer mode is enabled, you will see three buttons: "Load unpacked," "Pack extension," and "Update." Click on "Load unpacked."</p>
+                <li>For <strong>Firefox</strong>:</li>
+                <p>Click on the gear icon on the Add-ons page, select "Install Add-on From File," and choose the .xpi file.</p>
+              </ul>
+            </li>
+
+            <li><strong>Select the Extension Folder:</strong>
+              <ul>
+                <li>For <strong>Chromium-based Browsers</strong>:</li>
+                <p>A file dialog will appear. Navigate to the folder where you extracted the extension or where the .crx file is located. Select the folder or the .crx file and click "Select Folder" or "Open."</p>
+                <li>For <strong>Firefox</strong>:</li>
+                <p>After clicking "Install Add-on From File," choose the .xpi file and click "Open."</p>
+              </ul>
+            </li>
+
+            <li><strong>Confirm Installation:</strong>
+              <p>The extension should now appear in the list of installed extensions on the Extensions (Chromium-based Browsers) or Add-ons (Firefox) page.</p></li>
+
+            <li><strong>Verify the Extension:</strong>
+              <p>Check that the extension icon appears in your browser toolbar.</p></li>
+
+            <li><strong>Configure if Needed:</strong>
+              <p>Some extensions may require additional configuration. Check the extension's options or settings page if needed.</p></li>
+
+            <li><strong>Done:</strong>
+              <p>Your extension should now be installed and active.</p></li>
+          </ol>
+        `
       }
     },
     async fetch() {
@@ -66,7 +136,6 @@
       }
     }
 
-
     &.promos {
       .content {
         padding: 1rem 0;
@@ -74,65 +143,7 @@
     }
 
     &.about {
-      .styles {
-        margin: 1rem 0.4rem;
-        font-size: 14px;
-        line-height: 1.7777778;
 
-        h1 {
-          color: #333;
-          font-size: 20px;
-          margin-bottom: 20px;
-        }
-
-        h2 {
-          color: #555;
-          font-size: 18px;
-          margin-top: 30px;
-          margin-bottom: 15px;
-        }
-
-        h3 {
-          color: #555;
-          font-size: 16px;
-          margin-top: 20px;
-          margin-bottom: 10px;
-        }
-
-        p {
-          color: #777;
-          margin-bottom: 15px;
-        }
-
-        ul {
-          list-style-type: disc;
-          margin-left: 20px;
-          color: #777;
-
-          li {
-            margin-bottom: 10px;
-          }
-        }
-
-        ol {
-          list-style-type: decimal;
-          margin-left: 20px;
-          color: #777;
-
-          li {
-            margin-bottom: 10px;
-          }
-        }
-
-        a {
-          color: #007bff;
-          text-decoration: none;
-
-          &:hover {
-            text-decoration: underline;
-          }
-        }
-      }
     }
 
     &.det {
@@ -162,6 +173,7 @@
         }
 
         .downloads {
+
           a {
             display: inline-block;
             text-decoration: none;
@@ -169,10 +181,102 @@
             color: $white;
             border-radius: 4px;
             padding: 12px 16px;
-            margin-right: 12px;
+            margin: 12px 12px 0 0;
+          }
+        }
+
+        .how_to_link {
+          a {
+            display: block;
+            padding: 12px 0;
+            color: $dark;
           }
         }
       }
+    }
+  }
+
+  .styles {
+    margin: 1rem 0.4rem;
+    font-size: 14px;
+    line-height: 1.7777778;
+
+    h1 {
+      color: #333;
+      font-size: 20px;
+      margin-bottom: 20px;
+    }
+
+    h2 {
+      color: #555;
+      font-size: 18px;
+      margin-top: 30px;
+      margin-bottom: 15px;
+    }
+
+    h3 {
+      color: #555;
+      font-size: 16px;
+      margin-top: 20px;
+      margin-bottom: 10px;
+    }
+
+    p {
+      color: #777;
+      margin-bottom: 15px;
+    }
+
+    ul {
+      list-style-type: disc;
+      margin-left: 20px;
+      color: #777;
+
+      li {
+        margin-bottom: 10px;
+      }
+    }
+
+    ol {
+      list-style-type: decimal;
+      margin-left: 20px;
+      color: #777;
+
+      li {
+        margin-bottom: 10px;
+      }
+    }
+
+    a {
+      color: #007bff;
+      text-decoration: none;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  @media screen and (max-width: $medium) {
+    .container-fluid {
+      &.det {
+        display: block;
+
+        img {
+          width: 100%;
+          max-height: 24rem;
+          object-fit: contain;
+        }
+
+        .info {
+          padding: 1rem 0;
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: $s-medium) {
+    .container-fluid {
+      margin: 1rem;
     }
   }
 }
