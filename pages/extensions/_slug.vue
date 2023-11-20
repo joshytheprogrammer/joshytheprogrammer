@@ -5,13 +5,13 @@
       <div class="info">
         <h1>{{ extension.name }} <sup> v{{ extension.version }}</sup></h1>
         <p>{{ extension.description }}</p>
+        <div class="how_to_link">
+          <a href="#installation">How to install extensions in Chrome and Firefox</a>
+        </div>
         <div class="downloads">
           <a v-show="extension.downloads.firefox.link" :href="extension.downloads.firefox.link" :download="extension.slug+'.xpi'">Download for Firefox</a>
 
           <a v-show="extension.downloads.chrome.link" :href="extension.downloads.chrome.link" :download="extension.slug">Download for Chrome</a>
-        </div>
-        <div class="how_to_link">
-          <a href="#installation">How to install extensions in Chrome and Firefox</a>
         </div>
       </div>
     </div>
@@ -140,10 +140,6 @@
       .content {
         padding: 1rem 0;
       }
-    }
-
-    &.about {
-
     }
 
     &.det {
