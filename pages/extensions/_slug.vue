@@ -18,22 +18,27 @@
     <div class="container-fluid promos">
       <div class="header">
         <h2>Screenshots & Promos</h2>
+        <span @click="togglePromos">Click to  {{ showPromos ? 'hide' : 'show' }}</span>
       </div>
-      <div class="content" v-if="extension.promos">
+      <div class="content" v-if="extension.promos" v-show="showPromos">
         <p v-show="!extension.promos.images.length && !extension.promos.images.length">No promotional material available...</p>
       </div>
     </div>
-    <div class="container-fluid about">
+
+    <div class="container-fluid about" >
       <div class="header">
         <h2>About this extension</h2>
+        <span @click="toggleAbout">Click to {{ showAbout ? 'hide' : 'show' }} </span>
       </div>
-      <div v-html="extension.about" class="styles"></div>
+      <div v-html="extension.about" class="styles" v-show="showAbout"></div>
     </div>
+
     <div class="container-fluid chrome" id="installation">
       <div class="header">
         <h2>How to Install</h2>
+        <span @click="toggleInstall">Click to {{ showInstall ? 'hide' : 'show' }}</span>
       </div>
-      <div v-html="how_to_install" class="styles"></div>
+      <div v-html="how_to_install" class="styles" v-show="showInstall"></div>
     </div>
   </div>
 </template>
@@ -42,6 +47,9 @@
   export default {
     data() {
       return {
+        showPromos: false,
+        showAbout: false,
+        showInstall: false,
         extension: {},
         how_to_install: `
           <p>Installing extensions from a .crx file on Chromium-based browsers like Brave, Chrome, and Edge, and from a .xpi file on Firefox is straightforward. Here's a step-by-step guide:</p>
@@ -109,7 +117,18 @@
     },
     async fetch() {
       this.extension = await this.$content('extensions', this.$route.params.slug).fetch()
-    }
+    },
+    methods: {
+    togglePromos() {
+      this.showPromos = !this.showPromos;
+    },
+    toggleAbout() {
+      this.showAbout = !this.showAbout;
+    },
+    toggleInstall() {
+      this.showInstall = !this.showInstall;
+    },
+  },
   }
 </script>
 
@@ -128,11 +147,21 @@
 
     .header {
       border-bottom: 2px solid $rGrey;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 0;
 
       h2 {
-        padding: 1rem 0;
         font-size: 26px;
         font-weight: 500;
+      }
+
+      span {
+        font-size: 12px;
+        font-weight: 400;
+        text-decoration: underline;
+        cursor: pointer;
       }
     }
 
@@ -273,6 +302,15 @@
   @media screen and (max-width: $s-medium) {
     .container-fluid {
       margin: 1rem;
+
+      .header {
+        display: block;
+
+        span {
+          text-decoration: none;
+          padding: 0.8rem 0;
+        }
+      }
     }
   }
 }
