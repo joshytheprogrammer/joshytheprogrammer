@@ -1,0 +1,12 @@
+{
+  "imgLink": "https://images.unsplash.com/photo-1546410531-bb4caa6b424d",
+  "title": "CU Course Evaluator",
+  "desc": "The CU Course Evaluator is a browser extension designed to simplify the course evaluation process for students at Covenant University.",
+  "view": {
+    "link": "https://joshytheprogrammer.com/extensions/cu-course-evaluator"
+  },
+  "status": {
+    "message": "Completed",
+    "code": "completed"
+  }
+}

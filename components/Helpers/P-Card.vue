@@ -1,11 +1,11 @@
 <template>
-  <div class="card"> 
+  <div class="card">
     <img class="_img" :src="data.imgLink" :alt="'image of '+ data.title" loading="lazy">
     <div class="_body">
       <h5 class="_title">{{data.title}}</h5>
       <p class="_desc">{{data.desc}}</p>
       <div class="actions">
-        <a rel="nofollow" :href="data.github.link">Check this out</a>
+        <a rel="nofollow" :href="data.view.link">Learn More</a>
         <span class="_status" :class="data.status.code">{{data.status.message}}</span>
         <!-- completed, ongoing, not-started -->
       </div>
@@ -67,7 +67,8 @@ export default {
         color: $light;
         border-radius: 4px;
         font-size: 12px;
-        padding: 0.1rem 0.3rem;
+        font-weight: 500;
+        padding: 0.2rem 0.5rem;
 
         &.completed {
           background: $success;
