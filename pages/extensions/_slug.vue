@@ -153,7 +153,7 @@
               <ul>
                 <li>For <strong>Chromium-based Browsers</strong>:</li>
                 <p>A file dialog will appear. Navigate to the folder where you extracted the extension or where the .crx file is located. Select the folder or the .crx file and click "Select Folder" or "Open."</p>
-                <p>In some chromium browsers, you may need to drag and drop the extension in the center of the extensions page.</p>
+                <p><mark>In some chromium browsers, you may need to drag and drop the extension into the center of the extensions page.</mark></p>
                 <li>For <strong>Firefox</strong>:</li>
                 <p>After clicking "Install Add-on From File," choose the .xpi file and click "Open."</p>
               </ul>
