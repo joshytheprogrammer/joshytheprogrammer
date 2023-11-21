@@ -45,6 +45,57 @@
 
 <script>
   export default {
+    head(){
+      return {
+        title: this.extension.name + ' - JTP extension store',
+        meta: [
+          {
+            hid: 'description',
+            name: 'description',
+            content: this.extension?.description.substr(0, 155)
+          },
+          {
+            hid: 'og:title',
+            property: 'og:title',
+            content: this.extension.name + ' - joshytheprogrammer\'s blog'
+          },
+          {
+            hid: 'og:description',
+            property: 'og:description',
+            content: this.extension?.description.substr(0, 155)
+          },
+          {
+            hid: 'og:image',
+            property: 'og:image',
+            content: this.extension.thumbnail
+          },
+          {
+            hid: 'og:url',
+            property: 'og:url',
+            content: 'https://www.joshytheprogrammer.com/blog/'+this.extension.slug
+          },
+          {
+            hid: 'twitter:title',
+            name: 'twitter:title',
+            content: this.extension.name + ' - joshytheprogrammer\'s blog'
+          },
+          { hid: 'twitter:description',
+            name: "twitter:description",
+            content: this.extension?.description.substr(0, 155)
+          },
+          {
+            hid: 'twitter:image',
+            name: "twitter:image",
+            content: this.extension.thumbnail
+          },
+          {
+            hid: "twitter:card",
+            name: "twitter:card",
+            content: "summary_large_image"
+          },
+        ]
+      }
+    },
     data() {
       return {
         showPromos: false,
@@ -95,6 +146,7 @@
               <ul>
                 <li>For <strong>Chromium-based Browsers</strong>:</li>
                 <p>A file dialog will appear. Navigate to the folder where you extracted the extension or where the .crx file is located. Select the folder or the .crx file and click "Select Folder" or "Open."</p>
+                <p>In some chromium browsers, you may need to drag and drop the extension in the center of the extensions page.</p>
                 <li>For <strong>Firefox</strong>:</li>
                 <p>After clicking "Install Add-on From File," choose the .xpi file and click "Open."</p>
               </ul>
@@ -119,16 +171,18 @@
       this.extension = await this.$content('extensions', this.$route.params.slug).fetch()
     },
     methods: {
-    togglePromos() {
-      this.showPromos = !this.showPromos;
+      togglePromos() {
+        this.showPromos = !this.showPromos;
+      },
+      toggleAbout() {
+        this.showAbout = !this.showAbout;
+      },
+      toggleInstall() {
+        this.showInstall = !this.showInstall;
+      },
     },
-    toggleAbout() {
-      this.showAbout = !this.showAbout;
-    },
-    toggleInstall() {
-      this.showInstall = !this.showInstall;
-    },
-  },
+
+
   }
 </script>
 
