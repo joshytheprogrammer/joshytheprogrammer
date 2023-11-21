@@ -24,7 +24,7 @@ export default {
       { name:"twitter:creator", content:"@joshytheprog"}
     ],
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
-    link: [{rel: "canonical", href:"https://joshytheprogrammer.com"}],
+    link: [{ hid: 'canonical', rel: "canonical", href:"https://joshytheprogrammer.com"}],
   },
 
   css: [

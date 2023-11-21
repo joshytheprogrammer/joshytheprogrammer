@@ -52,17 +52,17 @@
           {
             hid: 'description',
             name: 'description',
-            content: this.extension?.description.substr(0, 155)
+            content: this.extension.description
           },
           {
             hid: 'og:title',
             property: 'og:title',
-            content: this.extension.name + ' - joshytheprogrammer\'s blog'
+            content: this.extension.name + ' - JTP extension store'
           },
           {
             hid: 'og:description',
             property: 'og:description',
-            content: this.extension?.description.substr(0, 155)
+            content: this.extension.description
           },
           {
             hid: 'og:image',
@@ -72,16 +72,16 @@
           {
             hid: 'og:url',
             property: 'og:url',
-            content: 'https://www.joshytheprogrammer.com/blog/'+this.extension.slug
+            content: 'https://www.joshytheprogrammer.com/extensions/'+this.extension.slug
           },
           {
             hid: 'twitter:title',
             name: 'twitter:title',
-            content: this.extension.name + ' - joshytheprogrammer\'s blog'
+            content: this.extension.name + ' -  JTP extension store'
           },
           { hid: 'twitter:description',
             name: "twitter:description",
-            content: this.extension?.description.substr(0, 155)
+            content: this.extension.description
           },
           {
             hid: 'twitter:image',
@@ -92,6 +92,13 @@
             hid: "twitter:card",
             name: "twitter:card",
             content: "summary_large_image"
+          },
+        ],
+        link: [
+          {
+            hid: 'canonical',
+            rel: 'canonical',
+            href: 'https://www.joshytheprogrammer.com/extensions/'+this.extension.slug
           },
         ]
       }
