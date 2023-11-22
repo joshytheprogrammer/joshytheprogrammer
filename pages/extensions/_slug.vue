@@ -9,12 +9,37 @@
           <a href="#installation">How to install extensions in Chromium Browsers (Brave, Chrome, Edge) and Firefox</a>
         </div>
         <div class="downloads" v-if="extension.downloads">
-          <a v-show="extension.downloads.firefox.link" :href="extension.downloads.firefox.link" :download="extension.slug+'.xpi'">Download for Firefox</a>
+          <a v-show="extension.downloads.firefox.extLink" :href="extension.downloads.firefox.extLink" :download="extension.slug+'.xpi'">Download for Firefox</a>
 
-          <a v-show="extension.downloads.chrome.link" :href="extension.downloads.chrome.link" :download="extension.slug">Download for Chromium</a>
+          <a v-show="extension.downloads.chrome.extLink" :href="extension.downloads.chrome.extLink" :download="extension.slug">Download for Chromium</a>
         </div>
       </div>
     </div>
+
+    <div class="container-fluid official" id="official">
+      <div class="header">
+        <h2>External Sources - Browser Web Stores</h2>
+        <span @click="toggleOfficial">Click to {{ showOfficial ? 'hide' : 'show' }}</span>
+      </div>
+      <div v-show="showOfficial" class="content">
+        <p>Please keep in mind that official browser extension store have their own policies and guidelines which may prevent genuinely great extensions from being listed with them. However they may also accept those extensions. In such cases, You will find the official links listed here...</p>
+        <p>
+          <b>Chrome/Brave/Edge: </b>
+          <span>
+            <a v-if="extension.downloads.chrome.offLink" :href="extension.downloads.chrome.offLink" target="_blank">CU Course Evaluator</a>
+            <span v-else>Unavailable</span>
+          </span>
+        </p>
+        <p>
+          <b>Firefox: </b>
+          <span>
+            <a v-if="extension.downloads.firefox.offLink" :href="extension.downloads.firefox.offLink">Cu Course Evaluator</a>
+            <span v-else>Unavailable</span>
+          </span>
+        </p>
+      </div>
+    </div>
+
     <div class="container-fluid promos">
       <div class="header">
         <h2>Screenshots & Promos</h2>
@@ -33,6 +58,7 @@
       <div v-html="extension.about" class="styles" v-show="showAbout"></div>
     </div>
 
+
     <div class="container-fluid chrome" id="installation">
       <div class="header">
         <h2>How to Install</h2>
@@ -40,6 +66,7 @@
       </div>
       <div v-html="how_to_install" class="styles" v-show="showInstall"></div>
     </div>
+
   </div>
 </template>
 
@@ -108,6 +135,7 @@
         showPromos: false,
         showAbout: false,
         showInstall: false,
+        showOfficial: false,
         extension: {},
         how_to_install: `
           <p>Installing extensions from a .crx file on Chromium-based browsers like Brave, Chrome, and Edge, and from a .xpi file on Firefox is straightforward. Here's a step-by-step guide:</p>
@@ -187,6 +215,9 @@
       toggleInstall() {
         this.showInstall = !this.showInstall;
       },
+      toggleOfficial() {
+        this.showOfficial = !this.showOfficial
+      }
     },
 
 
@@ -229,6 +260,28 @@
     &.promos {
       .content {
         padding: 1rem 0;
+      }
+    }
+
+    &.official {
+      font-size: 14px;
+
+      p {
+        color: #777;
+        margin-bottom: 15px;
+      }
+
+      a {
+        color: #007bff;
+        text-decoration: none;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+
+      .content {
+        margin: 1rem 0;
       }
     }
 
