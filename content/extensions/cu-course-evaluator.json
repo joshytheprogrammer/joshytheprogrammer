@@ -4,11 +4,11 @@
   "thumbnail": "https://res.cloudinary.com/dsgvwxygr/image/upload/v1700490861/joshytheprogrammer/cu-course-evaluator_qzuuez.png",
   "downloads": {
     "firefox": {
-      "extLink": "https://github.com/joshytheprogrammer/cu_course_evaluator/releases/download/v1.4.1/cu_course_evaluator_1.4.1.xpi",
+      "extLink": "https://github.com/joshytheprogrammer/cu_course_evaluator/releases/download/v1.4.2/cu_course_evaluator_1.4.2.xpi",
       "offLink": null
     },
     "chrome": {
-      "extLink": "https://github.com/joshytheprogrammer/cu_course_evaluator/releases/download/v1.4.1/cu_course_evaluator_1.4.1.crx",
+      "extLink": "https://github.com/joshytheprogrammer/cu_course_evaluator/releases/download/v1.4.2/cu_course_evaluator_1.4.2.crx",
       "offLink": "https://chromewebstore.google.com/detail/cu-course-evaluator/nfmdjaeindoeebapfgejfdpdnmhbnhgf"
     }
   },
