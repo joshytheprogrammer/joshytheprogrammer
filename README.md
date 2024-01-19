@@ -48,6 +48,12 @@ Below are some of the noteworthy web applications I've developed for clients:
 - **Repository:** [ochexagon_official_repository](https://github.com/joshytheprogrammer/ochexagonv2)
 - **Website:** [ochexagon_official_website](https://ochexagon.com/)
 
+### Caspian
+
+- **Description:** Caspian
+- **Repository:** [caspian_official_repository](https://github.com/joshytheprogrammer/caspian)
+- **Website:** [caspian_official_website](https://caspian.demo.joshytheprogrammer.com/)
+
 ### Joshytheprogrammer (Personal Portfolio)
 
 - **Description:** This is my personal portfolio that hosts my blog, work, projects, and more.
